@@ -16,3 +16,5 @@ Miquéias Rodrigues
 [Pixabay](https://pixabay.com/pt/)
 
 [Optimizila](https://imagecompressor.com)
+
+[Unicode](https://unicode.org/charts/)
