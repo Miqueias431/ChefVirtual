@@ -1,3 +1,6 @@
+![GitHub License](https://img.shields.io/github/license/Miqueias431/ChefVirtual)
+
+
 # ChefVirtual
 Este repositório hospeda o projeto do site ChefVirtual
 ## Autor
