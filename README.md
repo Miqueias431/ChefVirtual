@@ -11,7 +11,9 @@ Miquéias Rodrigues
 
 [Google Fonts](https://fonts.google.com)
 
-[Validador W3C](https://validator.w3.org/#validate_by_upload)
+[Validador W3C HTML](https://validator.w3.org/#validate_by_upload)
+
+[Validador W3C CSS](https://jigsaw.w3.org/css-validator/#validate_by_upload)
 
 [Draw.io](https://app.diagrams.net)
 
