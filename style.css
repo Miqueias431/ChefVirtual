@@ -51,7 +51,11 @@ body {
 }
 
 /* Smartphone portrait >>>>>>>>>>>>>>>>>>>>>> */
-
+/* Cabeçalho */
+#logo img {
+    width: 150px;
+    height: 150px;
+}
 /* FOOTER */
 footer {
     background-color: var(--turquesaPalida);
