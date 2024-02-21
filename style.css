@@ -11,6 +11,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
 
 
+/* variáveis globias*/
+:root {
+    --pretoLayout: #000000;
+    --turquesaPalida: #afeeee;
+}
+
 /* CSS RESET */
 * {
     margin: 0;
@@ -39,35 +45,38 @@ body {
 
 .Flex {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Smartphone portrait >>>>>>>>>>>>>>>>>>>>>> */
 
 /* FOOTER */
 footer {
-    background-color: darkgrey;
-}
-
-.Flex {
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    background-color: var(--turquesaPalida);
+    color: var(--pretoLayout);
 }
 
 #social {
-    background-color: greenyellow;
+    margin-bottom: 12px;
 }
 
-#copyright {
-    background-color: aqua;
-}
+#copyright {}
 
 /* Smartphone landscape >>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
     .Container {
         max-width: 540px;
     }
+
+    .Flex {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
+
 
 /* Tablet portrait >>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px) {
@@ -89,19 +98,9 @@ footer {
         max-width: 1140px;
     }
 
-    .Flex {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
-    }
+    #social {}
 
-    #social {
-        background-color: greenyellow;
-    }
-
-    #copyright {
-        background-color: aqua;
-    }
+    #copyright {}
 }
 
 /* PCs, notebooks ou Tv Full HD + >>>>>>>>>>>> */
