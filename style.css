@@ -3,51 +3,104 @@
  @author Miquéias Rodrigues
 */
 
+/* import fonts */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+
+
 /* CSS RESET */ 
 *{
     margin: 0;
     padding: 0;
     border: 0;
-
 }
+
+/* LAYOUT */
 
 /* Rolagem suave */
 html {
     scroll-behavior: smooth;
 }
 
-/* import fonts */
-
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap');
-
 body {
-    font-family: "Dancing Script", sans-serif;
+    font-family: "Quicksand", sans-serif;
+}
+
+.Container {
+    margin: 0 auto;
+
+    padding: 50px 15px 50px 15px; /*Top, right, botton, left*/
+
+}
+
+.Flex {
+    display: flex;
 }
 
 /* Smartphone portrait >>>>>>>>>>>>>>>>>>>>>> */
 
+/* FOOTER */
+footer {
+    background-color: darkgrey;
+}
+.Flex {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#social {
+    background-color: greenyellow;
+}
+#copyright {
+    background-color: aqua;
+}
+
 /* Smartphone landscape >>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
-    
+    .Container {
+        max-width: 540px;
+    }
 }
 
 /* Tablet portrait >>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px) {
-    
+    .Container {
+        max-width: 720px;
+    }
 }
 
 /* Tablet landscape >>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px) {
-    
+    .Container {
+        max-width: 960px;
+    }
 }
 
 /* PCs ou notebooks HD + >>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
-    
+    .Container {
+        max-width: 1140px;
+    }
+    .Flex {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #social {
+        background-color: greenyellow;
+    }
+    #copyright {
+        background-color: aqua;
+    }
 }
 
 /* PCs, notebooks ou Tv Full HD + >>>>>>>>>>>> */
 @media (min-width: 1400px) {
-    
+    .Container {
+        max-width: 1360px;
+    }
 }
 
