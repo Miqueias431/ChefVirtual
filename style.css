@@ -61,7 +61,7 @@ body {
 /**************** Cabeçalho ******************/
 header {
     height: 102px;
-    background-color: var(--SkyBlue);
+    
 }
 
 #logo img {
@@ -80,7 +80,12 @@ footer {
     margin-bottom: 12px;
 }
 
-#copyright {}
+.Card {
+    margin-top: 30px;
+    width: 338px;
+    height: 520px;
+    background-color: var(--SkyBlue);
+}
 
 /* Smartphone landscape >>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
@@ -94,7 +99,7 @@ footer {
     header {
         max-width: 540px;
         margin: 0 auto;
-        background-color: var(--SkyBlue);
+        
     }
     #logo img {
         width: 108px;
@@ -124,7 +129,7 @@ footer {
     header {
         max-width: 720px;
         height: 100px;
-        background-color: var(--SkyBlue);
+        
     }
 
     #logo img {
@@ -144,7 +149,7 @@ footer {
     header {
         max-width: 960px;
         height: 100px;
-        background-color: var(--SkyBlue);
+        
     }
 
     #logo img {
@@ -164,7 +169,7 @@ footer {
     header {
         max-width: 1140px;
         height: 100px;
-        background-color:var(--SkyBlue);
+        
     }
 
     #logo img {
@@ -184,12 +189,13 @@ footer {
     header {
         max-width: 1360px;
         height: 100px;
-        background-color: var(--SkyBlue);
+        
     }
 
     #logo img {
         width: 110px;
         height: 110px;
-        margin: -6px 0px 0px 0px;
+        margin: -4.5px 0px 0px 0px;
+       
     }
 }
