@@ -44,7 +44,8 @@ body {
 }
 
 
-.Flex, .FlexMenu {
+.Flex,
+.FlexMenu {
     display: Flex;
     justify-content: space-between;
 }
@@ -83,8 +84,16 @@ footer {
 
 /* Smartphone landscape >>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
+
+    /* Cabeçalho */
+
     .Container {
         max-width: 540px;
+    }
+
+    header {
+        max-width: 540px;
+        margin: 0 auto;
     }
 
     .Flex {
@@ -93,16 +102,29 @@ footer {
         align-items: center;
     }
 
+
     #social {
         margin-bottom: 0px;
     }
 }
 
-
 /* Tablet portrait >>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px) {
     .Container {
         max-width: 720px;
+    }
+
+    /* Cabeçalho */
+    header {
+        max-width: 720px;
+        height: 100px;
+        background-color: aquamarine;
+    }
+
+    #logo img {
+        width: 105px;
+        height: 105px;
+        margin: -5px 0px 0px 0px;
     }
 }
 
@@ -110,6 +132,19 @@ footer {
 @media (min-width: 992px) {
     .Container {
         max-width: 960px;
+    }
+
+    /* Cabeçalho */
+    header {
+        max-width: 960px;
+        height: 100px;
+        background-color: violet;
+    }
+
+    #logo img {
+        width: 107px;
+        height: 107px;
+        margin: -5px 0px 0px 0px;
     }
 }
 
@@ -119,11 +154,36 @@ footer {
         max-width: 1140px;
     }
 
+    /* Cabeçalho */
+    header {
+        max-width: 1140px;
+        height: 100px;
+        background-color: blue;
+    }
+
+    #logo img {
+        width: 108px;
+        height: 108px;
+        margin: -5px 0px 0px 0px;
+    }
 }
 
 /* PCs, notebooks ou Tv Full HD + >>>>>>>>>>>> */
 @media (min-width: 1400px) {
     .Container {
         max-width: 1360px;
+    }
+
+    /* Cabeçalho */
+    header {
+        max-width: 1360px;
+        height: 100px;
+        background-color: gray;
+    }
+
+    #logo img {
+        width: 110px;
+        height: 110px;
+        margin: -6px 0px 0px 0px;
     }
 }
