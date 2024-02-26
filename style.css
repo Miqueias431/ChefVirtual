@@ -16,6 +16,11 @@
     --pretoLayout: #000000;
     --Silver: #C0C0C0;
     --SkyBlue: #87CEEB;
+    --Card: #f1f1f1;
+    --Borda: #778899;
+    --CadetBlue: #5F9EA0;
+    --Cinzatxt: #434343;
+    
 }
 
 /* CSS RESET */
@@ -84,7 +89,34 @@ footer {
     margin-top: 30px;
     width: 338px;
     height: 520px;
-    background-color: var(--SkyBlue);
+    background-color: var(--Card);
+    border: 1px solid var(--Borda);
+    border-radius: 25px;
+    text-align: center;
+}
+.Card img{
+    border-radius: 25px 25px 0px 0px;
+}
+
+.Card h3 {
+    margin: 15px 30px 0px 30px;
+}
+
+.Card p {
+    padding: 10px 30px 60px 30px;
+    text-align: left;
+    color: var(--Cinzatxt);
+    font-weight: 450;
+}
+
+.Button {
+    text-decoration: none;
+    background-color: var(--CadetBlue);
+    color: var(--Card);
+    padding: 12px 60px;
+    border-radius: 15px;
+    font-size: 1.2em;
+    font-weight: 500;
 }
 
 /* Smartphone landscape >>>>>>>>>>>>>>>>>>>>> */
