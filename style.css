@@ -60,13 +60,13 @@ body {
 /************* Smartphone portrait ************/
 /**************** Cabeçalho ******************/
 header {
-    height: 97px;
+    height: 100.5px;
     background-color: var(--SkyBlue);
 }
 
 #logo img {
-    width: 95px;
-    height: 95px;
+    width: 100px;
+    height: 100px;
     margin: 1px 0px 0px 3px;
 }
 
