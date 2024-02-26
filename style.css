@@ -60,13 +60,13 @@ body {
 /************* Smartphone portrait ************/
 /**************** Cabeçalho ******************/
 header {
-    height: 100.5px;
+    height: 102px;
     background-color: var(--SkyBlue);
 }
 
 #logo img {
-    width: 100px;
-    height: 100px;
+    width: 101px;
+    height: 101px;
     margin: 1px 0px 0px 3px;
 }
 
@@ -94,12 +94,12 @@ footer {
     header {
         max-width: 540px;
         margin: 0 auto;
-        background-color: chocolate;
+        background-color: var(--SkyBlue);
     }
     #logo img {
-        width: 105px;
-        height: 105px;
-        margin: -5px 0px 0px 1px;
+        width: 108px;
+        height: 108px;
+        margin: -3px 0px 0px 1px;
     }
 
     .Flex {
@@ -124,13 +124,13 @@ footer {
     header {
         max-width: 720px;
         height: 100px;
-        background-color: aquamarine;
+        background-color: var(--SkyBlue);
     }
 
     #logo img {
-        width: 105px;
-        height: 105px;
-        margin: -5px 0px 0px 0px;
+        width: 108px;
+        height: 108px;
+        margin: -4px 0px 0px 0px;
     }
 }
 
@@ -144,7 +144,7 @@ footer {
     header {
         max-width: 960px;
         height: 100px;
-        background-color: violet;
+        background-color: var(--SkyBlue);
     }
 
     #logo img {
@@ -164,7 +164,7 @@ footer {
     header {
         max-width: 1140px;
         height: 100px;
-        background-color: blue;
+        background-color:var(--SkyBlue);
     }
 
     #logo img {
@@ -184,7 +184,7 @@ footer {
     header {
         max-width: 1360px;
         height: 100px;
-        background-color: gray;
+        background-color: var(--SkyBlue);
     }
 
     #logo img {
