@@ -50,9 +50,7 @@ body {
 }
 
 .Flex {
-    display: Flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 }
 
