@@ -43,6 +43,12 @@ body {
 
 }
 
+
+.Flex, .FlexMenu {
+    display: Flex;
+    justify-content: space-between;
+}
+
 .Flex {
     display: Flex;
     flex-direction: column;
@@ -50,10 +56,7 @@ body {
     align-items: center;
 }
 
-.FlexMenu {
-    display: Flex;
-    justify-content: space-between;
-}
+
 
 /************* Smartphone portrait ************/
 /**************** Cabeçalho ******************/
