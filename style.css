@@ -60,7 +60,7 @@ body {
 /************* Smartphone portrait ************/
 /**************** Cabeçalho ******************/
 header {
-    height: 95px;
+    height: 97px;
     background-color: var(--SkyBlue);
 }
 
@@ -94,6 +94,12 @@ footer {
     header {
         max-width: 540px;
         margin: 0 auto;
+        background-color: chocolate;
+    }
+    #logo img {
+        width: 105px;
+        height: 105px;
+        margin: -5px 0px 0px 1px;
     }
 
     .Flex {
