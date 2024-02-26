@@ -14,7 +14,8 @@
 /* variáveis globias*/
 :root {
     --pretoLayout: #000000;
-    --turquesaPalida: #afeeee;
+    --Silver: #C0C0C0;
+    --SkyBlue: #87CEEB;
 }
 
 /* CSS RESET */
@@ -37,29 +38,39 @@ body {
 
 .Container {
     margin: 0 auto;
-
     padding: 50px 15px 50px 15px;
     /*Top, right, botton, left*/
 
 }
 
 .Flex {
-    display: flex;
+    display: Flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
+.FlexMenu {
+    display: Flex;
+    justify-content: space-between;
+}
+
 /************* Smartphone portrait ************/
 /**************** Cabeçalho ******************/
+header {
+    height: 95px;
+    background-color: var(--SkyBlue);
+}
+
 #logo img {
-    width: 150px;
-    height: 150px;
+    width: 95px;
+    height: 95px;
+    margin: 1px 0px 0px 3px;
 }
 
 /* FOOTER */
 footer {
-    background-color: var(--turquesaPalida);
+    background-color: var(--Silver);
     color: var(--pretoLayout);
 }
 
