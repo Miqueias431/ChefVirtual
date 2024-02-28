@@ -72,6 +72,14 @@ section {
     align-items: center;
 }
 
+/* Topo */
+
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    color: var(--pretoLayout);
+}
 
 
 /************* Smartphone portrait ************/
