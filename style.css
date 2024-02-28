@@ -13,13 +13,18 @@
 
 /* variáveis globias*/
 :root {
-    --pretoLayout: #000000;
+    --pretoLayout: rgba(0,0,0, 0.5);
     --Silver: #C0C0C0;
     --SkyBlue: #87CEEB;
     --Card: #f1f1f1;
     --Borda: #778899;
     --CadetBlue: #5F9EA0;
     --Cinzatxt: #434343;
+    --textcolor: #F5F5F5;
+    --fundo: #48D1CC;
+    --CornflowerBlue: #6495ED;
+    --LightSlateGray: #778899;
+    --DarkCyan: rgba(0,139,139, 0.86);
 
 }
 
@@ -70,7 +75,8 @@ section {
 
 
 /************* Smartphone portrait ************/
-/**************** Cabeçalho ******************/
+
+/***************** Cabeçalho ******************/
 header {
     height: 102px;
 }
@@ -79,6 +85,47 @@ header {
     width: 101px;
     height: 101px;
     margin: 1px 0px 0px 3px;
+}
+
+#check {
+    display: none;
+}
+
+label {
+    font-size: 2em;
+    color: var(--pretoLayout);
+    position: fixed;
+    top: 20px;
+    right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    background-color: var(--DarkCyan);
+    height: 100vh;
+    position: fixed;
+    top: 80px;
+    right: -70%; /*Estratégia para 
+    recolher o menu*/
+    width: 70%;
+    transition: all 0.7s;
+}
+
+/* Ativar o checkbox referente a ul*/
+
+#check:checked~ul {
+    right: 0px;
+}
+
+nav ul li {
+    border-bottom: 0.5px solid var(--pretoLayout);
+    text-align: right;
+    padding: 15px;
+}
+
+nav ul li a {
+    text-decoration:none;
+    color: var(--textcolor);
 }
 
 /* FOOTER */
@@ -176,6 +223,18 @@ footer {
         height: 108px;
         margin: -4px 0px 0px 0px;
     }
+
+    label {
+        font-size: 3em;
+        top: 10px;
+        right: 10px;
+    }
+    
+    nav ul {
+        top: 100px;
+        right: -50%;
+        width: 50%;
+    }
 }
 
 /* Tablet landscape >>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -196,6 +255,19 @@ footer {
         height: 107px;
         margin: -5px 0px 0px 0px;
     }
+
+    label {
+        font-size: 3em;
+        top: 10px;
+        right: 10px;
+    }
+    
+    nav ul {
+        top: 100px;
+        right: -50%;
+        width: 50%;
+    }
+
 }
 
 /* PCs ou notebooks HD + >>>>>>>>>>>>>>>>>>>> */
@@ -215,6 +287,28 @@ footer {
         width: 108px;
         height: 108px;
         margin: -5px 0px 0px 0px;
+    }
+
+    label {
+        display: none;
+    }
+    
+    nav ul {
+        width: 100%;
+        position: static;
+        height:auto;
+        background-color: white;
+        margin-top: 50px;
+    }
+    nav ul li {
+        border: 0;
+        float: left;
+    }
+    nav ul li a{
+        color: black;
+    }
+    nav ul li a:hover {
+        color: var(--DarkCyan);
     }
 }
 
