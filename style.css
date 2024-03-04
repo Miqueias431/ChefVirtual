@@ -13,7 +13,8 @@
 
 /* variáveis globias*/
 :root {
-    --pretoLayout: rgba(0,0,0, 0.5);
+    --pretoLayout: rgba(0, 0, 0, 0.5);
+    --pretonrgb: #000000;
     --Silver: #C0C0C0;
     --SkyBlue: #87CEEB;
     --Card: #f1f1f1;
@@ -24,7 +25,8 @@
     --fundo: #48D1CC;
     --CornflowerBlue: #6495ED;
     --LightSlateGray: #778899;
-    --DarkCyan: rgba(0,139,139, 0.86);
+    --DarkCyan: rgba(0, 139, 139, 0.86);
+    --colorlinkedin: #258dbf;
 
 }
 
@@ -55,21 +57,61 @@ section {
 
 .Container {
     margin: 0 auto;
-    padding: 50px 15px 50px 15px;
+    padding: 50px 15px;
     /*Top, right, botton, left*/
 
 }
 
+.ContainerEx {
+    margin: 0 auto;
+}
 
 .Flex,
+.FlexSobre,
 .FlexMenu {
     display: Flex;
-    justify-content: space-between;
 }
 
 .Flex {
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+}
+
+.FlexSobre {
+    flex-direction: column;
+    text-align: center;
+}
+
+.FlexMenu {
+    justify-content: space-between;
+}
+
+.Botao {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-radius: 15px;
+}
+
+.Botao {
+    background-color: var(--CadetBlue);
+    padding: 10px 40px;
+    margin-right: 5px;
+}
+
+.Banner2 {
+    height: 200px;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Noto Serif' , sans-serif;
 }
 
 /* Topo */
@@ -78,9 +120,7 @@ section {
     position: fixed;
     right: 10px;
     bottom: 10px;
-    color: var(--pretoLayout);
 }
-
 
 /************* Smartphone portrait ************/
 
@@ -113,10 +153,17 @@ nav ul {
     height: 100vh;
     position: fixed;
     top: 80px;
-    right: -70%; /*Estratégia para 
+    right: -70%;
+    /*Estratégia para 
     recolher o menu*/
     width: 70%;
     transition: all 0.7s;
+}
+
+/* Copyright Rodapé */
+#copyright {
+    color: var(--pretonrgb);
+    font-weight: bold;
 }
 
 /* Ativar o checkbox referente a ul*/
@@ -132,12 +179,37 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration:none;
+    text-decoration: none;
     color: var(--textcolor);
 }
 
-/* FOOTER */
+/* Banner */
+#banner {
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #banner h1 {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+  }
+  
+  #banner h2 {
+    font-size: 1.15em;
+    font-weight: 700;
+    margin: 15px 0px 50px 0px;
+  }
+
+/* FOOTER CARD */
 footer {
+    height: auto;
     background-color: var(--Silver);
     color: var(--pretoLayout);
 }
@@ -179,6 +251,40 @@ footer {
     border-radius: 15px;
     font-size: 1.2em;
     font-weight: 500;
+    font-weight: bold;
+}
+
+/* FOOTER SOBRE */
+
+.Banner2 h1 {
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+#imgSobre img {
+    width: 256px;
+    height: 256px;
+    margin-bottom: 40px;
+    border-radius: 50%;
+}
+
+#textoSobre h2 {
+    font-weight: 500;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+#textoSobre p {
+    text-align: left;
+    margin-top: 15px;
+}
+
+#frase {
+    font-style: italic;
+}
+
+#autor {
+    font-size: 0.8em;
 }
 
 /* Smartphone landscape >>>>>>>>>>>>>>>>>>>>> */
@@ -186,7 +292,9 @@ footer {
 
     /* Cabeçalho */
 
-    .Container {
+    /* Layout */
+    .Container,
+    .ContainerEx {
         max-width: 540px;
     }
 
@@ -211,11 +319,39 @@ footer {
     #social {
         margin-bottom: 0px;
     }
+
+    /***** Página sobre *****/
+    #imgSobre img {
+        width: 180px;
+        height: 180px;
+        margin: 0;
+    }
+
+    #textoSobre {
+        margin-left: 25px;
+
+    }
+
+    #textoSobre h2 {
+        font-size: 1.25em;
+    }
+
+    #textoSobre p {
+        margin-top: 6px;
+        font-size: 0.85em;
+    }
+
+    #autor {
+        font-size: 0.75em;
+    }
 }
 
-/* Tablet portrait >>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Tablet portratit >>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px) {
-    .Container {
+
+    .Container,
+    .ContainerEx {
         max-width: 720px;
     }
 
@@ -237,56 +373,84 @@ footer {
         top: 10px;
         right: 10px;
     }
-    
+
     nav ul {
         top: 100px;
         right: -50%;
         width: 50%;
     }
+
 }
 
 /* Tablet landscape >>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px) {
-    .Container {
+
+    .Container,
+    .ContainerEx {
         max-width: 960px;
     }
 
-    /* Cabeçalho */
-    header {
-        max-width: 960px;
-        height: 100px;
-
+    /***** Página sobre *****/
+    #imgSobre img {
+        width: 288px;
+        height: 288px;
     }
 
-    #logo img {
-        width: 107px;
-        height: 107px;
-        margin: -5px 0px 0px 0px;
+    #textoSobre {
+        margin-left: 50px;
     }
 
-    label {
-        font-size: 3em;
-        top: 10px;
-        right: 10px;
+    #textoSobre h2 {
+        font-size: 1.5em;
     }
-    
-    nav ul {
-        top: 100px;
-        right: -50%;
-        width: 50%;
+
+    #textoSobre p {
+        margin-top: 15px;
+        font-size: 1em;
     }
+
+    #autor {
+        font-size: 0.8em;
+    }
+}
+
+/* Cabeçalho */
+header {
+    max-width: 960px;
+    height: 100px;
 
 }
 
+#logo img {
+    width: 107px;
+    height: 107px;
+    margin: -5px 0px 0px 0px;
+}
+
+label {
+    font-size: 3em;
+    top: 10px;
+    right: 10px;
+}
+
+nav ul {
+    top: 100px;
+    right: -50%;
+    width: 50%;
+}
+
+
+
 /* PCs ou notebooks HD + >>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
-    .Container {
+
+    .Container,
+    .ContainerEx {
         max-width: 1140px;
     }
 
     /* Cabeçalho */
     header {
-        max-width: 1140px;
         height: 100px;
 
     }
@@ -300,29 +464,60 @@ footer {
     label {
         display: none;
     }
-    
+
     nav ul {
         width: 100%;
         position: static;
-        height:auto;
+        height: auto;
         background-color: white;
         margin-top: 50px;
     }
+
     nav ul li {
         border: 0;
         float: left;
     }
-    nav ul li a{
+
+    nav ul li a {
         color: black;
     }
+
     nav ul li a:hover {
         color: var(--DarkCyan);
+    }
+
+    /* PARTE SOBRE*/
+
+    .FlexSobre {
+        flex-direction: row;
+    }
+
+    #textoSobre h2 {
+        font-weight: 500;
+        font-size: 1.5em;
+        margin-top: 26px;
+        text-align: left;
+    }
+
+    #textoSobre p {
+        text-align: left;
+        margin-top: 15px;
+    }
+
+    #frase {
+        font-style: italic;
+    }
+
+    #autor {
+        font-size: 0.8em;
     }
 }
 
 /* PCs, notebooks ou Tv Full HD + >>>>>>>>>>>> */
 @media (min-width: 1400px) {
-    .Container {
+
+    .Container,
+    .ContainerEx {
         max-width: 1360px;
     }
 
