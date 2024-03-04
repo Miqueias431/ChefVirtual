@@ -87,20 +87,6 @@ section {
     justify-content: space-between;
 }
 
-.Botao {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.2em;
-    font-weight: 700;
-    border-radius: 15px;
-}
-
-.Botao {
-    background-color: var(--CadetBlue);
-    padding: 10px 40px;
-    margin-right: 5px;
-}
-
 .Banner2 {
     height: 200px;
     background-color: #fff;
@@ -113,6 +99,8 @@ section {
     text-align: center;
     font-family: 'Noto Serif' , sans-serif;
 }
+
+
 
 /* Topo */
 
