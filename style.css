@@ -24,7 +24,8 @@
     --textcolor: #F5F5F5;
     --fundo: #48D1CC;
     --CornflowerBlue: #6495ED;
-    --LightSlateGray: #778899;
+    --VemelhoClaro: #eba4a4;
+    --Vermelho-: #dd6262;
     --DarkCyan: rgba(0, 139, 139, 0.86);
     --colorlinkedin: #258dbf;
 
@@ -96,14 +97,14 @@ section {
 }
 
 .Botao {
-    background-color: var(--fundo);
+    background-color: var(--VemelhoClaro);
     padding: 10px 40px;
     margin-right: 5px;
 }
 
 .Banner2 {
     height: 200px;
-    background: url(img/banner1.PNG);
+    background: url(img/banner2.PNG);
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -187,10 +188,10 @@ nav ul li a {
 /* Banner */
 #banner {
     height: 46vh;
-    background: url(img/banner1.PNG);
+    background: url(img/banner2.PNG);
     background-size: cover;
     background-position: center left -91.5px;
-    color: #000000;
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
