@@ -345,10 +345,10 @@ footer {
     border-radius: 35px;
     font-size: 1em;
     font-weight: 500;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
-#link li a{
+#link li a {
     text-decoration: none;
     color: var(--textcolor);
 }
@@ -393,10 +393,10 @@ footer {
     }
 
     /* Banner */
-    
+
     #banner {
         height: 60vh;
-        background-position: center left -10px;
+        background-position: center;
     }
 
     #banner h1 {
@@ -408,6 +408,52 @@ footer {
         font-family: "Dosis", sans-serif;
         font-size: 1.2em;
     }
+
+    #banner1 {
+        height: 60vh;
+        background-position: center;
+    }
+
+    #banner1 h1 {
+        font-size: 2em;
+        margin-top: 50px;
+    }
+
+    #banner1 h2 {
+        font-family: "Dosis", sans-serif;
+        font-size: 1.2em;
+    }
+
+    #banner2 {
+        height: 60vh;
+        background-position: center;
+    }
+
+    #banner2 h1 {
+        font-size: 2em;
+        margin-top: 50px;
+    }
+
+    #banner2 h2 {
+        font-family: "Dosis", sans-serif;
+        font-size: 1.2em;
+    }
+
+    #banner3 {
+        height: 60vh;
+        background-position: center;
+    }
+
+    #banner3 h1 {
+        font-size: 2em;
+        margin-top: 50px;
+    }
+
+    #banner3 h2 {
+        font-family: "Dosis", sans-serif;
+        font-size: 1.2em;
+    }
+
 
     header {
         max-width: 540px;
@@ -467,10 +513,10 @@ footer {
     }
 
     /* Banner */
-    
+
     #banner {
         height: 50vh;
-        background-position: center ;
+        background-position: center;
     }
 
     #banner h1 {
@@ -482,8 +528,74 @@ footer {
         font-size: 1.5em;
     }
 
-    .Botao{
+    #banner1 {
+        height: 50vh;
+        background-position: center;
+    }
+
+    #banner1 h1 {
+        font-size: 2.5em;
+        margin-top: 60px;
+    }
+
+    #banner1 h2 {
         font-size: 1.5em;
+    }
+
+    #banner2 {
+        height: 50vh;
+        background-position: center;
+    }
+
+    #banner2 h1 {
+        font-size: 2.5em;
+        margin-top: 60px;
+    }
+
+    #banner2 h2 {
+        font-size: 1.5em;
+    }
+
+    #banner3 {
+        height: 50vh;
+        background-position: center;
+    }
+
+    #banner3 h1 {
+        font-size: 2.5em;
+        margin-top: 60px;
+    }
+
+    #banner3 h2 {
+        font-size: 1.5em;
+    }
+
+    .Botao {
+        font-size: 1.5em;
+    }
+
+    /* Links Menu Gourmet */
+
+    #link {
+        display: flex;
+    }
+
+    #link li {
+        list-style: none;
+        background-color: var(--Vermelho-);
+        width: 180px;
+        text-align: center;
+        padding: 14px 14px;
+        margin: 10px 20px 0px 20px;
+        border-radius: 35px;
+        font-size: 1.5em;
+        font-weight: 500;
+        font-weight: bold;
+    }
+
+    #link li a {
+        text-decoration: none;
+        color: var(--textcolor);
     }
 
     /* Cabeçalho */
@@ -522,10 +634,10 @@ footer {
     }
 
     /* Banner */
-    
+
     #banner {
         height: 50vh;
-        background-position: center ;
+        background-position: center;
     }
 
     #banner h1 {
@@ -537,7 +649,7 @@ footer {
         font-size: 1.5em;
     }
 
-    .Botao{
+    .Botao {
         font-size: 1.5em;
     }
 
@@ -645,7 +757,7 @@ nav ul {
 
     #banner h1 {
         font-size: 2.75em;
-        margin-top:0px;
+        margin-top: 0px;
     }
 
     #banner h2 {
