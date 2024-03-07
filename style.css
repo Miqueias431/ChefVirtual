@@ -14,6 +14,7 @@
 /* variáveis globias*/
 :root {
     --pretoLayout: rgba(0, 0, 0, 0.5);
+    --Branco: #fff;
     --pretonrgb: #000000;
     --Silver: #C0C0C0;
     --SkyBlue: #87CEEB;
@@ -25,7 +26,9 @@
     --fundo: #48D1CC;
     --CornflowerBlue: #6495ED;
     --VemelhoClaro: #eba4a4;
+    --VemelhoClarorgb: rgba(235, 164, 164, 0.86);
     --Vermelho-: #dd6262;
+    --Vermelho-rgb: rgba(221, 98, 98, 0.86);
     --DarkCyan: rgba(0, 139, 139, 0.86);
     --colorlinkedin: #258dbf;
 
@@ -151,7 +154,7 @@ label {
 
 nav ul {
     list-style: none;
-    background-color: var(--DarkCyan);
+    background-color: var(--Vermelho-rgb);
     height: 100vh;
     position: fixed;
     top: 80px;
