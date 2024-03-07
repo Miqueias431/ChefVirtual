@@ -107,7 +107,7 @@ section {
 
 .Banner2 {
     height: 200px;
-    background: url(img/banner2.PNG);
+    background: url(img/banner.png);
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -191,7 +191,7 @@ nav ul li a {
 /* Banner */
 #banner {
     height: 46vh;
-    background: url(img/banner2.PNG);
+    background: url(img/banner.png);
     background-size: cover;
     background-position: center left -91.5px;
     color: #fff;
