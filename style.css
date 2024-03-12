@@ -5,6 +5,7 @@
 
 /* import fonts */
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Inter:wght@100..900&display=swap');
 
@@ -23,7 +24,7 @@
     --CadetBlue: #5F9EA0;
     --Cinzatxt: #434343;
     --textcolor: #F5F5F5;
-    --fundo: #48D1CC;
+    --button: #ff7b5a;
     --CornflowerBlue: #6495ED;
     --VemelhoClaro: #eba4a4;
     --VemelhoClarorgb: rgba(235, 164, 164, 0.86);
@@ -139,6 +140,7 @@ label {
 }
 
 nav ul {
+    background:none;
     list-style: none;
     background-color: var(--Vermelho-rgb);
     height: 100vh;
@@ -149,6 +151,7 @@ nav ul {
     recolher o menu*/
     width: 70%;
     transition: all 0.7s;
+    z-index: 1;
 }
 
 /* Copyright Rodapé */
@@ -167,11 +170,13 @@ nav ul li {
     border-bottom: 0.5px solid var(--pretoLayout);
     text-align: right;
     padding: 15px;
+    z-index: 1;
 }
 
 nav ul li a {
     text-decoration: none;
     color: var(--textcolor);
+    z-index: 1;
 }
 
 /* Banner */
@@ -293,29 +298,166 @@ footer {
     margin-bottom: 12px;
 }
 
+/* CARROSSEL */
+.carousel-container {
+    overflow-x: auto;
+
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    width: calc(100% - 20px); /* Ajuste a largura conforme necessário */
+    margin-left: 10px; /* Adiciona espaço à esquerda */
+    height:560px;
+}
+
+.Card:first-child {
+    margin-left: 10px; /* Adiciona espaço à esquerda para o primeiro item */
+}
+
 .Card {
-    margin-top: 30px;
-    width: 338px;
-    height: 520px;
-    background-color: var(--Card);
-    border: 1px solid var(--Borda);
-    border-radius: 25px;
-    text-align: center;
+    flex: 0 0 auto;
+    width: 270px;
+    height: 550px;
+    scroll-snap-align: start;
+    margin-right: 47px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.5), -5px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.Card::after{
+    content: ''; /* Criar um pseudo-elemento para a sombra */
+    position: absolute; /* Posição absoluta em relação ao card */
+    top: 0; /* Parte superior do card */
+    left: 0; /* Parte esquerda do card */
+    width: 100%; /* Largura igual ao card */
+    height: 10px; /* Altura da sombra */
+    z-index: 1; /* Colocar atrás do card */
 }
 
 .Card img {
-    border-radius: 25px 25px 0px 0px;
+    margin-top: 0px;
+    width: 100%;
 }
 
-.Card h3 {
-    margin: 15px 30px 0px 30px;
+.card-content {
+    text-align: left;
+    /* Centralizar o conteúdo */
 }
 
-.Card p {
-    padding: 10px 30px 60px 30px;
+.card-content h3 {
+    padding: 9px 10px 0px 10px;
+    font-weight: 600;
+}
+.card-content h2{
+    padding: 2px 10px 0px 10px;
+    color: #dd6262;
+    font-weight: 600;
+}
+.card-content p {
+    padding: 5px 10px 0px 10px;
+    color: var(--Cinzatxt);
+    font-weight: 450;
+}
+
+#relogio {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 0px 0px;
+}
+
+#relogio img {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#relogio p {
+    text-align: left;
+
+}
+
+/* Parte footer card home*/
+
+.Card2 {
+    margin: -100px 0px 0px 0px;
+    margin-top: 30px;
+    width: 338px;
+    height: 520px;
+    text-align: center;
+}
+
+.Card2 img {
+    margin: -80px 0px 10px 0px;
+    width: 338px;
+    height: 340px;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9); */
+}
+
+.Card2 h3 {
+    display: none;
+}
+
+.Card2 p {
+    font-size: 1.2em;
+    padding: 10px 30px 20px 0px;
     text-align: left;
     color: var(--Cinzatxt);
     font-weight: 450;
+
+}
+
+/* Parte footer Texto home*/
+
+.Texto1 {
+
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.Texto1 h4 {
+    font-family: "Nunito", sans-serif;
+    margin: -20px 0px 20px 0px;
+    text-align: left;
+    color: #a0a0a0;
+    font-weight: 400;
+}
+
+.Texto1 h1 {
+    margin: 0px 0px 50px 0px;
+    font-family: "Dosis", sans-serif;
+    width: 330px;
+    font-size: 3em;
+    text-align: left;
+    color: var(--pretonrgb);
+    font-weight: 600;
+
+}
+
+/* Parte footer Botão home*/
+
+.Button2 {
+    width: 370px;
+    margin: 0px 34px 0px 0px;
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+    background-color: var(--button);
+    color: var(--Card);
+    padding: 12px 40px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: 500;
+    font-weight: bold;
 }
 
 .Button {
@@ -337,7 +479,7 @@ footer {
 
 #link li {
     list-style: none;
-    background-color: var(--Vermelho-);
+    background-color: var(--button);
     width: 130px;
     text-align: center;
     padding: 12px 12px;
