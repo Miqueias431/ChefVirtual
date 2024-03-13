@@ -310,6 +310,7 @@ footer {
     height:560px;
 }
 
+
 .Card:first-child {
     margin-left: 10px; /* Adiciona espaço à esquerda para o primeiro item */
 }
@@ -318,7 +319,6 @@ footer {
     flex: 0 0 auto;
     width: 270px;
     height: 550px;
-    scroll-snap-align: start;
     margin-right: 47px;
     background-color: #f0f0f0;
     display: flex;
@@ -327,7 +327,6 @@ footer {
     border-radius: 10px;
     overflow: hidden;
     position: relative;
-
     box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.5), -5px 0px 15px rgba(0, 0, 0, 0.5);
     z-index: -1; /* Colocar atrás do card */
 }
@@ -366,21 +365,20 @@ footer {
     color: var(--Cinzatxt);
     font-weight: 450;
 }
-
-#relogio {
+.relogio {
     display: flex;
     align-items: center;
     margin: 20px 0px 0px 0px;
 }
 
-#relogio img {
+.relogio img {
     width: 40px;
     height: 40px;
     margin-right: 5px;
     margin-left: 5px;
 }
 
-#relogio p {
+.relogio p {
     text-align: left;
 
 }
@@ -432,7 +430,7 @@ footer {
     font-weight: 400;
 }
 
-.Texto1 h1 {
+.Texto1 h2 {
     margin: 0px 0px 50px 0px;
     font-family: "Dosis", sans-serif;
     width: 330px;
