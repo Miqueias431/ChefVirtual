@@ -308,7 +308,7 @@ footer {
 /* CARROSSEL */
 .carousel-container {
     overflow-x: hidden; /* Adicione esta linha */
-    overflow-y: none; /* Mantenha esta linha para garantir que a barra de rolagem vertical também seja ocultada, se houver */
+    overflow-y: hidden; /* Mantenha esta linha para garantir que a barra de rolagem vertical também seja ocultada, se houver */
     position: relative;
     overflow: hidden;
 }
@@ -408,7 +408,7 @@ footer {
 
 .Card2 p {
     font-size: 1.2em;
-    padding: 10px 30px -100px 0px;
+    padding: 10px 30px 0px 0px;
     text-align: left;
     color: var(--Cinzatxt);
     font-weight: 450;
