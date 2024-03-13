@@ -73,7 +73,8 @@ section {
 
 .Flex,
 .FlexSobre,
-.FlexMenu {
+.FlexMenu, 
+.FlexHome {
     display: Flex;
 }
 
@@ -90,6 +91,10 @@ section {
 
 .FlexMenu {
     justify-content: space-between;
+}
+
+.FlexHome {
+    
 }
 
 .Botao {
@@ -155,7 +160,7 @@ nav ul {
     recolher o menu*/
     width: 70%;
     transition: all 0.7s;
-    z-index: 1;
+    z-index: 2;
 }
 
 /* Copyright Rodapé */
@@ -302,8 +307,10 @@ footer {
 
 /* CARROSSEL */
 .carousel-container {
-    overflow-x: auto;
-
+    overflow-x: hidden; /* Adicione esta linha */
+    overflow-y: none; /* Mantenha esta linha para garantir que a barra de rolagem vertical também seja ocultada, se houver */
+    position: relative;
+    overflow: hidden;
 }
 
 .carousel {
@@ -312,8 +319,8 @@ footer {
     width: calc(100% - 20px); /* Ajuste a largura conforme necessário */
     margin-left: 10px; /* Adiciona espaço à esquerda */
     height:560px;
+    transition: transform 0.5s ease;
 }
-
 
 .Card:first-child {
     margin-left: 10px; /* Adiciona espaço à esquerda para o primeiro item */
@@ -323,7 +330,7 @@ footer {
     flex: 0 0 auto;
     width: 270px;
     height: 550px;
-    margin-right: 47px;
+    margin-right: 40px;
     background-color: #f0f0f0;
     display: flex;
     flex-direction: column;
@@ -331,24 +338,15 @@ footer {
     border-radius: 10px;
     overflow: hidden;
     position: relative;
-    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.5), -5px 0px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5), -5px 0px 10px rgba(0, 0, 0, 0.5);
     z-index: -1; /* Colocar atrás do card */
-}
-
-.Card::after{
-    content: ''; /* Criar um pseudo-elemento para a sombra */
-    position: absolute; /* Posição absoluta em relação ao card */
-    top: 0; /* Parte superior do card */
-    left: 0; /* Parte esquerda do card */
-    width: 100%; /* Largura igual ao card */
-    height: 10px; /* Altura da sombra */
-    z-index: -2; /* Colocar atrás do card */
 }
 
 .Card img {
     margin-top: 0px;
     width: 100%;
 }
+
 
 .card-content {
     text-align: left;
@@ -390,7 +388,7 @@ footer {
 /* Parte footer card home*/
 
 .Card2 {
-    margin: -100px 0px 0px 0px;
+    margin: -100px 0px -50px 0px;
     margin-top: 30px;
     width: 338px;
     height: 520px;
@@ -410,7 +408,7 @@ footer {
 
 .Card2 p {
     font-size: 1.2em;
-    padding: 10px 30px 20px 0px;
+    padding: 10px 30px -100px 0px;
     text-align: left;
     color: var(--Cinzatxt);
     font-weight: 450;
@@ -442,6 +440,29 @@ footer {
     text-align: left;
     color: var(--pretonrgb);
     font-weight: 600;
+
+}
+
+.Texto2 {
+    text-align: center;
+
+}
+
+.Texto2 h4 {
+    font-family: "Nunito", sans-serif;
+    margin: 20px 0px -65px 0px;
+    text-align: center;
+    color: var(--pretonrgb);
+    font-weight: 400;
+}
+
+.Texto2 h2 {
+    font-family: "Dosis", sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: crimson;
+    font-weight: 600;
+    margin-top: -45px;
 
 }
 
