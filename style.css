@@ -170,13 +170,11 @@ nav ul li {
     border-bottom: 0.5px solid var(--pretoLayout);
     text-align: right;
     padding: 15px;
-    z-index: 1;
 }
 
 nav ul li a {
     text-decoration: none;
     color: var(--textcolor);
-    z-index: 1;
 }
 
 /* Banner */
@@ -331,6 +329,7 @@ footer {
     position: relative;
 
     box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.5), -5px 0px 15px rgba(0, 0, 0, 0.5);
+    z-index: -1; /* Colocar atrás do card */
 }
 
 .Card::after{
@@ -340,7 +339,7 @@ footer {
     left: 0; /* Parte esquerda do card */
     width: 100%; /* Largura igual ao card */
     height: 10px; /* Altura da sombra */
-    z-index: 1; /* Colocar atrás do card */
+    z-index: -2; /* Colocar atrás do card */
 }
 
 .Card img {
