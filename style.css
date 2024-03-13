@@ -121,6 +121,10 @@ header {
     height: 102px;
 }
 
+#h3 {
+    display: none;
+}
+
 #logo img {
     width: 101px;
     height: 101px;
