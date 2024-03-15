@@ -73,7 +73,7 @@ section {
 
 .Flex,
 .FlexSobre,
-.FlexMenu, 
+.FlexMenu,
 .FlexHome {
     display: Flex;
 }
@@ -94,7 +94,8 @@ section {
 }
 
 .FlexHome {
-
+    justify-content: space-around;
+    
 }
 
 .Botao {
@@ -149,7 +150,7 @@ label {
 }
 
 nav ul {
-    background:none;
+    background: none;
     list-style: none;
     background-color: var(--Vermelho-rgb);
     height: 100vh;
@@ -160,7 +161,7 @@ nav ul {
     recolher o menu*/
     width: 70%;
     transition: all 0.7s;
-    z-index: 2;
+    z-index: 1;
 }
 
 /* Copyright Rodapé */
@@ -173,17 +174,20 @@ nav ul {
 
 #check:checked~ul {
     right: 0px;
+    z-index: 1;
 }
 
 nav ul li {
     border-bottom: 0.5px solid var(--pretoLayout);
     text-align: right;
     padding: 15px;
+    z-index: 1;
 }
 
 nav ul li a {
     text-decoration: none;
     color: var(--textcolor);
+    z-index: 1;
 }
 
 /* Banner */
@@ -307,30 +311,118 @@ footer {
 
 /* CARROSSEL */
 .carousel-container {
-    overflow-x: hidden; /* Adicione esta linha */
-    overflow-y: hidden; /* Mantenha esta linha para garantir que a barra de rolagem vertical também seja ocultada, se houver */
-    position: relative;
     overflow: hidden;
+    position: relative;
+    z-index: -1;
 }
 
 .carousel {
     display: flex;
-    overflow-x: auto;
-    width: calc(100% - 20px); /* Ajuste a largura conforme necessário */
+    width: 100%;
+    animation: pri-slide 30s infinite; /* Ajuste a duração da animação conforme necessário */
+    transition: transform 0.5s ease; /* Transição suave ao mudar a posição */
     margin-left: 10px; /* Adiciona espaço à esquerda */
-    height:560px;
-    transition: transform 0.5s ease;
+    height: 560px;
+    z-index: -1;
 }
 
+@keyframes pri-slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    5% {
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(-101%);
+    }
+
+    15% {
+        transform: translateX(-101%);
+    }
+
+    20% {
+        transform: translateX(-201%);
+    }
+
+    25% {
+        transform: translateX(-201%);
+    }
+
+    30% {
+        transform: translateX(-303%);
+    }
+
+    35% {
+        transform: translateX(-303%);
+    }
+
+    40% {
+        transform: translateX(-404%);
+    }
+
+    45% {
+        transform: translateX(-404%);
+    }
+
+    50% {
+        transform: translateX(-505%);
+    }
+
+    55% {
+        transform: translateX(-505%);
+    }
+
+    60% {
+        transform: translateX(-606%);
+    }
+
+    65% {
+        transform: translateX(-606%);
+    }
+
+    70% {
+        transform: translateX(-708%);
+    }
+
+    75% {
+        transform: translateX(-708%);
+    }
+
+    80% {
+        transform: translateX(-810%);
+    }
+
+    85% {
+        transform: translateX(-810%);
+    }
+
+    90% {
+        transform: translateX(-910%);
+    }
+
+    95% {
+        transform: translateX(-910%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
 .Card:first-child {
-    margin-left: 10px; /* Adiciona espaço à esquerda para o primeiro item */
+    margin-left: 10px;
+    /* Adiciona espaço à esquerda para o primeiro item */
 }
 
 .Card {
-    flex: 0 0 auto;
+    flex: 0 0 300px;
     width: 270px;
     height: 550px;
-    margin-right: 40px;
+    margin-right: 50px;
     background-color: #f0f0f0;
     display: flex;
     flex-direction: column;
@@ -339,7 +431,8 @@ footer {
     overflow: hidden;
     position: relative;
     box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5), -5px 0px 10px rgba(0, 0, 0, 0.5);
-    z-index: -1; /* Colocar atrás do card */
+    z-index: -1;
+    /* Colocar atrás do card */
 }
 
 .Card img {
@@ -354,19 +447,22 @@ footer {
 }
 
 .card-content h3 {
-    padding: 9px 10px 0px 10px;
+    padding: 9px 0px 0px 10px;
     font-weight: 600;
 }
-.card-content h2{
-    padding: 2px 10px 0px 10px;
-    color: #dd6262;
+
+.card-content h2 {
+    padding: 5px 0px 0px 10px;
+    color: crimson;
     font-weight: 600;
 }
+
 .card-content p {
-    padding: 5px 10px 0px 10px;
+    padding: 10px 10px 0px 10px;
     color: var(--Cinzatxt);
-    font-weight: 450;
+    font-weight: 500;
 }
+
 .relogio {
     display: flex;
     align-items: center;
@@ -382,13 +478,13 @@ footer {
 
 .relogio p {
     text-align: left;
-
+    margin: 0px 0px 8px 0px;
 }
 
 /* Parte footer card home*/
 
 .Card2 {
-    margin: -100px 0px -50px 0px;
+    margin: -100px 0px -100px 0px;
     margin-top: 30px;
     width: 338px;
     height: 520px;
@@ -397,8 +493,8 @@ footer {
 
 .Card2 img {
     margin: -80px 0px 10px 0px;
-    width: 338px;
-    height: 340px;
+    width: 50vh;
+    height: auto;
     /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9); */
 }
 
@@ -464,6 +560,40 @@ footer {
     font-weight: 600;
     margin-top: -45px;
 
+}
+
+/* Parte footer Texto home mais vantagens*/
+
+#Texto1 h2 {
+    background-color: crimson;
+    font-family: "Dosis", sans-serif;
+    font-size: 2em;
+    text-align: center;
+    color: var(--pretonrgb);
+    font-weight: 600;
+    margin-top: -45px;
+
+}
+
+.container {
+    background-color: crimson;
+    margin-top: 50px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.CardVantagem {
+    background-color: crimson;
+    padding: 30px 0;
+    margin-top: 20px;
+}
+
+.CardVantagem img {
+    margin-top: 0px;
+    width: 100px;
+    height: 105 px;
 }
 
 /* Parte footer Botão home*/
