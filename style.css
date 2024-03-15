@@ -585,12 +585,15 @@ footer {
 }
 
 .CardVantagem {
+    border: var(--Branco) solid 2px;
     background-color: crimson;
     padding: 30px 0;
     margin-top: 20px;
 }
 
 .CardVantagem img {
+    justify-content: center;
+    flex-direction: column;
     margin-top: 0px;
     width: 100px;
     height: 105 px;
