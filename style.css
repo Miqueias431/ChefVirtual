@@ -95,7 +95,6 @@ section {
 
 .FlexHome {
     justify-content: space-around;
-    
 }
 
 .Botao {
@@ -599,6 +598,9 @@ footer {
     height: 105 px;
 }
 
+.CardVantagem h2 {
+    display: none;
+}
 /* Parte footer Botão home*/
 
 .Button2 {
