@@ -318,9 +318,12 @@ footer {
 .carousel {
     display: flex;
     width: 100%;
-    animation: pri-slide 30s infinite; /* Ajuste a duração da animação conforme necessário */
-    transition: transform 0.5s ease; /* Transição suave ao mudar a posição */
-    margin-left: 10px; /* Adiciona espaço à esquerda */
+    animation: pri-slide 30s infinite;
+    /* Ajuste a duração da animação conforme necessário */
+    transition: transform 0.5s ease;
+    /* Transição suave ao mudar a posição */
+    margin-left: 10px;
+    /* Adiciona espaço à esquerda */
     height: 560px;
     z-index: -1;
 }
@@ -601,6 +604,7 @@ footer {
 .CardVantagem h2 {
     display: none;
 }
+
 /* Parte footer Botão home*/
 
 .Button2 {
@@ -1011,6 +1015,11 @@ nav ul {
         max-width: 1140px;
     }
 
+    .Container {
+        justify-content: space-evenly;
+        display: flex;
+    }
+
     /* Cabeçalho */
     header {
         height: 100px;
@@ -1045,7 +1054,7 @@ nav ul {
     }
 
     nav ul li a:hover {
-        color: var(--DarkCyan);
+        color: var(--Vermelho-);
     }
 
     /* Banner */
