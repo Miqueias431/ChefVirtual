@@ -1569,12 +1569,9 @@ nav ul {
     .carousel {
         display: flex;
         width: 100%;
-        animation: pri-slide 70s infinite;
-        /* Ajuste a duração da animação conforme necessário */
+        animation: pri-slide 10s infinite;
         transition: transform 0.5s ease;
-        /* Transição suave ao mudar a posição */
         margin-left: 10px;
-        /* Adiciona espaço à esquerda */
         height: 560px;
         z-index: -1;
     }
@@ -1597,11 +1594,11 @@ nav ul {
         }
 
         60% {
-            transform: translateX(-200%);
+            transform: translateX(-195%);
         }
 
         75% {
-            transform: translateX(-200%);
+            transform: translateX(-195%);
         }
 
         80% {
@@ -1619,15 +1616,14 @@ nav ul {
 
 
     .Card:first-child {
-        margin-left: 10px;
-        /* Adiciona espaço à esquerda para o primeiro item */
+        margin-left: 65px;
     }
 
     .Card {
         flex: 0 0 300px;
         width: 270px;
         height: 550px;
-        margin-right: 80px;
+        margin-right: 100px;
         background-color: #f0f0f0;
         display: flex;
         flex-direction: column;
