@@ -321,7 +321,7 @@ footer {
 .carousel {
     display: flex;
     width: 100%;
-    animation: pri-slide 90s infinite;
+    animation: pri-slide 75s infinite;
     /* Ajuste a duração da animação conforme necessário */
     transition: transform 0.5s ease;
     /* Transição suave ao mudar a posição */
@@ -341,75 +341,75 @@ footer {
     }
 
     10% {
-        transform: translateX(-101%);
+        transform: translateX(-90%);
     }
 
     15% {
-        transform: translateX(-101%);
+        transform: translateX(-90%);
     }
 
     20% {
-        transform: translateX(-201%);
+        transform: translateX(-188%);
     }
 
     25% {
-        transform: translateX(-201%);
+        transform: translateX(-188%);
     }
 
     30% {
-        transform: translateX(-303%);
+        transform: translateX(-283%);
     }
 
     35% {
-        transform: translateX(-303%);
+        transform: translateX(-283%);
     }
 
     40% {
-        transform: translateX(-404%);
+        transform: translateX(-378%);
     }
 
     45% {
-        transform: translateX(-404%);
+        transform: translateX(-378%);
     }
 
     50% {
-        transform: translateX(-505%);
+        transform: translateX(-473%);
     }
 
     55% {
-        transform: translateX(-505%);
+        transform: translateX(-473%);
     }
 
     60% {
-        transform: translateX(-606%);
+        transform: translateX(-567%);
     }
 
     65% {
-        transform: translateX(-606%);
+        transform: translateX(-567%);
     }
 
     70% {
-        transform: translateX(-708%);
+        transform: translateX(-662%);
     }
 
     75% {
-        transform: translateX(-708%);
+        transform: translateX(-662%);
     }
 
     80% {
-        transform: translateX(-810%);
+        transform: translateX(-759%);
     }
 
     85% {
-        transform: translateX(-810%);
+        transform: translateX(-759%);
     }
 
     90% {
-        transform: translateX(-910%);
+        transform: translateX(-854%);
     }
 
     95% {
-        transform: translateX(-910%);
+        transform: translateX(-854%);
     }
 
     100% {
@@ -425,9 +425,9 @@ footer {
 
 .Card {
     flex: 0 0 300px;
-    width: 270px;
+    max-width: 270px;
     height: 550px;
-    margin-right: 50px;
+    margin-right: 60px;
     background-color: #f0f0f0;
     display: flex;
     flex-direction: column;
@@ -498,7 +498,7 @@ footer {
 
 .Card2 img {
     margin: -80px 0px 10px 0px;
-    max-width:300px ;
+    max-width:50vh ;
     height: auto;
     /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9); */
 }
