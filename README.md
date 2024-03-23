@@ -6,6 +6,8 @@
 Este repositório hospeda o projeto do site ChefVirtual
 ## Autor
 Miquéias Rodrigues
+## Acesse o Site Pelo QrCode!!
+![](https://github.com/Miqueias431/ChefVirtual/blob/main/doc/qrcode_miqueias431.github.io.png)
 ##  Links utilizados
 [Google Trends](https://trends.google.com.br/trends/)
 
