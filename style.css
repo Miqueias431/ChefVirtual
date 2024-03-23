@@ -29,6 +29,8 @@
     --VemelhoClaro: #eba4a4;
     --VemelhoClarorgb: rgba(235, 164, 164, 0.86);
     --Vermelho-: #dd6262;
+    --OrangeRed: #FF4500;
+    --Crinsonrgb: rgba(171, 27, 55, 0.86);
     --Vermelho-rgb: rgba(221, 98, 98, 0.86);
     --DarkCyan: rgba(0, 139, 139, 0.86);
     --colorlinkedin: #258dbf;
@@ -95,6 +97,7 @@ section {
 
 .FlexHome {
     justify-content: space-around;
+
 }
 
 .Botao {
@@ -300,7 +303,7 @@ nav ul li a {
 /* FOOTER CARD */
 footer {
     height: auto;
-    background-color: var(--Silver);
+    background-color: #f3f3f3;
     color: var(--pretoLayout);
 }
 
@@ -318,7 +321,7 @@ footer {
 .carousel {
     display: flex;
     width: 100%;
-    animation: pri-slide 30s infinite;
+    animation: pri-slide 90s infinite;
     /* Ajuste a duração da animação conforme necessário */
     transition: transform 0.5s ease;
     /* Transição suave ao mudar a posição */
@@ -455,7 +458,7 @@ footer {
 
 .card-content h2 {
     padding: 5px 0px 0px 10px;
-    color: crimson;
+    color: #a80f2d;
     font-weight: 600;
 }
 
@@ -558,7 +561,7 @@ footer {
     font-family: "Dosis", sans-serif;
     font-size: 1.5em;
     text-align: center;
-    color: crimson;
+    color: #a80f2d;
     font-weight: 600;
     margin-top: -45px;
 
@@ -567,42 +570,59 @@ footer {
 /* Parte footer Texto home mais vantagens*/
 
 #Texto1 h2 {
-    background-color: crimson;
+    margin-top: 30px;
     font-family: "Dosis", sans-serif;
     font-size: 2em;
+    color: var(--Branco);
     text-align: center;
-    color: var(--pretonrgb);
     font-weight: 600;
-    margin-top: -45px;
 
 }
 
 .container {
-    background-color: crimson;
-    margin-top: 50px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    display: flex;
+    background-color: #a80f2d;
+    margin-top: -20px;
+    padding: 0px 0px 20px 0px;
+    padding-right: 30px;
+    padding-left: 30px;
+    flex-direction: column;
+    text-align: center;
 }
 
 .CardVantagem {
-    border: var(--Branco) solid 2px;
-    background-color: crimson;
-    padding: 30px 0;
-    margin-top: 20px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    border: var(--Branco) solid 1px;
+    background-color: #a80f2d;
+    padding: 40px 0px;
+    margin-top: 50px;
+    text-align: center;
+
 }
 
 .CardVantagem img {
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 0px;
+
+    margin-top: -20px;
+    margin-bottom: 10px;
     width: 100px;
     height: 105px;
 }
 
-.CardVantagem h2 {
-    display: none;
+.texto3 h3 {
+    text-align: center;
+    color: var(--Branco);
+    margin-bottom: 15px;
+    width: auto;
+
+}
+
+.texto3 p {
+
+    text-align: center;
+    color: var(--Branco);
+    width: 300px;
 }
 
 /* Parte footer Botão home*/
@@ -612,7 +632,7 @@ footer {
     margin: 0px 34px 0px 0px;
     font-family: "Nunito", sans-serif;
     text-decoration: none;
-    background-color: var(--button);
+    background-color: var(--Vermelho-);
     color: var(--Card);
     padding: 12px 40px;
     border-radius: 10px;
@@ -693,6 +713,168 @@ footer {
     .Container,
     .ContainerEx {
         max-width: 540px;
+    }
+
+    /* CARROSSEL */
+    .carousel-container {
+        overflow: hidden;
+        position: relative;
+        z-index: -1;
+    }
+
+    .carousel {
+        display: flex;
+        width: 100%;
+        animation: pri-slide 70s infinite;
+        /* Ajuste a duração da animação conforme necessário */
+        transition: transform 0.5s ease;
+        /* Transição suave ao mudar a posição */
+        margin-left: 10px;
+        /* Adiciona espaço à esquerda */
+        height: 560px;
+        z-index: -1;
+    }
+
+    @keyframes pri-slide {
+        0% {
+            transform: translateX(0);
+        }
+
+        10% {
+            transform: translateX(0);
+        }
+
+        20% {
+            transform: translateX(-101%);
+        }
+
+        30% {
+            transform: translateX(-101%);
+        }
+
+        40% {
+            transform: translateX(-201%);
+        }
+
+        50% {
+            transform: translateX(-201%);
+        }
+
+        60% {
+            transform: translateX(-301%);
+        }
+
+        70% {
+            transform: translateX(-301%);
+        }
+
+        80% {
+            transform: translateX(-401%);
+        }
+
+        90% {
+            transform: translateX(-401%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .Card {
+        flex: 0 0 240px;
+        margin-right: 30px;
+    }
+
+    /* Parte footer card home*/
+
+    .Card2 {
+        display: flex;
+        flex-direction: column;
+        margin: -100px 0px -70px 0px;
+        margin-top: 30px;
+        width: 500px;
+        height: 520px;
+        text-align: center;
+    }
+
+    .Card2 img {
+        margin: -80px 0px 10px 0px;
+        width: auto;
+        height: 100vh;
+    }
+
+    .Card2 h3 {
+        display: none;
+    }
+
+    .Card2 p {
+        font-size: 1.2em;
+        padding: 10px 30px 200px 0px;
+        text-align: left;
+        color: var(--Cinzatxt);
+        font-weight: 450;
+
+    }
+
+    /* Parte footer Texto home*/
+
+    .Texto1 {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: left;
+    }
+
+    .Texto1 h4 {
+        margin-left: -70px;
+    }
+
+    .Texto1 h2 {
+        margin-left: -70px;
+    }
+
+    .Texto2 {
+        text-align: center;
+
+    }
+
+    .Texto2 h4 {
+        font-family: "Nunito", sans-serif;
+        margin: 20px 0px -65px 0px;
+        text-align: center;
+        color: var(--pretonrgb);
+        font-weight: 400;
+    }
+
+    .Texto2 h2 {
+        font-family: "Dosis", sans-serif;
+        font-size: 1.5em;
+        text-align: center;
+        color: #a80f2d;
+        font-weight: 600;
+        margin-top: -45px;
+
+    }
+
+    /* Parte footer Texto home mais vantagens*/
+
+    #Texto1 h2 {
+        font-size: 2.3em;
+    }
+
+    .container {
+        padding-right: 45px;
+        padding-left: 45px;
+    }
+
+    /* Parte footer Botão home*/
+
+    .Button2 {
+        margin-left: -70px;
+        justify-content: left;
+        text-align: center;
+        padding: 10px 0;
     }
 
     /* Banner */
@@ -815,6 +997,185 @@ footer {
         max-width: 720px;
     }
 
+    /* CARROSSEL */
+    .carousel-container {
+        overflow: hidden;
+        position: relative;
+        z-index: -1;
+    }
+
+    .carousel {
+        display: flex;
+        width: 100%;
+        animation: pri-slide 60s infinite;
+        /* Ajuste a duração da animação conforme necessário */
+        transition: transform 0.5s ease;
+        /* Transição suave ao mudar a posição */
+        margin-left: 10px;
+        /* Adiciona espaço à esquerda */
+        height: 580px;
+        z-index: -1;
+    }
+
+    @keyframes pri-slide {
+        0% {
+            transform: translateX(0);
+        }
+
+        14.28% {
+            transform: translateX(0);
+        }
+
+        28.56% {
+            transform: translateX(-98%);
+        }
+
+        42.84% {
+            transform: translateX(-98%);
+        }
+
+        57.12% {
+            transform: translateX(-196%);
+        }
+
+        71.14% {
+            transform: translateX(-196%);
+        }
+
+        85.68% {
+            transform: translateX(-230%);
+        }
+
+        90% {
+            transform: translateX(-230%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .Card {
+        flex: 0 0 215px;
+        margin-right: 20px;
+    }
+
+    .relogio {
+        display: flex;
+        align-items: center;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .relogio img {
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .relogio p {
+        text-align: left;
+        margin: 0px 0px 8px 0px;
+    }
+
+    /* Parte footer card home*/
+
+    .Card2 {
+        display: flex;
+        flex-direction: column;
+        margin: -100px 0px -10px 0px;
+        margin-top: 30px;
+        width: 500px;
+        height: 520px;
+        text-align: center;
+    }
+
+    .Card2 img {
+        margin: -80px 0px 10px 0px;
+        width: auto;
+        height: 100vh;
+    }
+
+    .Card2 h3 {
+        display: none;
+    }
+
+    .Card2 p {
+        font-size: 1.5em;
+        padding: 10px 30px 200px 0px;
+        text-align: left;
+        color: var(--Cinzatxt);
+        font-weight: 450;
+
+    }
+
+    /* Parte footer Texto home*/
+
+    .Texto1 {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: left;
+    }
+
+    .Texto1 h4 {
+        margin-left: -70px;
+        font-size: 1.3em;
+    }
+
+    .Texto1 h2 {
+        margin-left: -70px;
+        font-size: 3em;
+    }
+
+    .Texto2 {
+        text-align: center;
+    }
+
+    .Texto2 h4 {
+        font-family: "Nunito", sans-serif;
+        margin: 20px 0px -65px 0px;
+        text-align: center;
+        color: var(--pretonrgb);
+        font-weight: 400;
+        font-size: 1.5em;
+    }
+
+    .Texto2 h2 {
+        font-family: "Dosis", sans-serif;
+        font-size: 2em;
+        text-align: center;
+        color: #a80f2d;
+        font-weight: 600;
+        margin-top: -45px;
+
+    }
+
+    /* Parte footer Texto home mais vantagens*/
+
+    #Texto1 h2 {
+        font-size: 2.3em;
+    }
+
+    .container {
+        font-size: 1.5em;
+
+    }
+
+    .texto3 p {
+        width: 400px;
+    }
+
+    /* Parte footer Botão home*/
+
+    .Button2 {
+        margin-left: -70px;
+        justify-content: left;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 1.5em;
+    }
+
     /* Banner */
 
     #banner {
@@ -926,6 +1287,10 @@ footer {
         width: 50%;
     }
 
+    nav ul li a {
+        font-size: 1.5em;
+    }
+
 }
 
 /* Tablet landscape >>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -934,6 +1299,181 @@ footer {
     .Container,
     .ContainerEx {
         max-width: 960px;
+    }
+
+    /* CARROSSEL */
+    .carousel-container {
+        overflow: hidden;
+        position: relative;
+        z-index: -1;
+    }
+
+    .carousel {
+        display: flex;
+        width: 105%;
+        animation: pri-slide 60s infinite;
+        /* Ajuste a duração da animação conforme necessário */
+        transition: transform 0.5s ease;
+        /* Transição suave ao mudar a posição */
+        margin-left: 10px;
+        /* Adiciona espaço à esquerda */
+        height: 580px;
+        z-index: -1;
+    }
+
+    @keyframes pri-slide {
+        0% {
+            transform: translateX(0);
+        }
+
+        15% {
+            transform: translateX(0);
+        }
+
+        30% {
+            transform: translateX(-95%);
+        }
+
+        45% {
+            transform: translateX(-95%);
+        }
+
+        60% {
+            transform: translateX(-190%);
+        }
+
+        75% {
+            transform: translateX(-190%);
+        }
+
+        90% {
+            transform: translateX(-223%);
+        }
+
+        100% {
+            transform: translateX(-223%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .Card {
+        flex: 0 0 280px;
+        margin-right: 40px;
+    }
+
+    .relogio {
+        display: flex;
+        align-items: center;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .relogio img {
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .relogio p {
+        text-align: left;
+        margin: 0px 0px 8px 0px;
+    }
+
+    /* Parte footer card home*/
+
+
+
+    .Card2 img {
+        margin: -80px 0px 10px -60px;
+        width: 600px;
+        height: 50vh;
+    }
+
+    .Card2 h3 {
+        display: none;
+    }
+
+    .Card2 p {
+        margin-left: -60px;
+        margin-bottom: 30px;
+        width: 650px;
+        display: flex;
+        font-size: 1.86em;
+        padding: 10px 30px 0px 0px;
+        text-align: left;
+        color: var(--Cinzatxt);
+        font-weight: 450;
+
+    }
+
+    /* Parte footer Texto home*/
+
+    .Texto1 {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: left;
+    }
+
+    .Texto1 h4 {
+        margin-left: -220px;
+        font-size: 1.3em;
+    }
+
+    .Texto1 h2 {
+        margin-left: -220px;
+        font-size: 3em;
+    }
+
+    .Texto2 {
+        text-align: center;
+    }
+
+    .Texto2 h4 {
+        font-family: "Nunito", sans-serif;
+        margin: 20px 0px -30px 0px;
+        text-align: center;
+        color: var(--pretonrgb);
+        font-weight: 400;
+        font-size: 1.5em;
+    }
+
+    .Texto2 h2 {
+        font-family: "Dosis", sans-serif;
+        font-size: 2em;
+        text-align: center;
+        color: #a80f2d;
+        font-weight: 600;
+        margin-top: -10px;
+
+    }
+
+    /* Parte footer Texto home mais vantagens*/
+
+    #Texto1 h2 {
+        font-size: 2.3em;
+    }
+
+    .container {
+        font-size: 1.5em;
+
+    }
+
+    .texto3 p {
+        width: 400px;
+    }
+
+    /* Parte footer Botão home*/
+
+    .Button2 {
+        margin-left: -220px;
+        justify-content: left;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 1.5em;
     }
 
     /* Banner */
@@ -978,6 +1518,10 @@ footer {
     #autor {
         font-size: 0.8em;
     }
+
+    nav ul li a {
+        font-size: 1.5em;
+    }
 }
 
 /* Cabeçalho */
@@ -1015,10 +1559,347 @@ nav ul {
         max-width: 1140px;
     }
 
-    .Container {
-        justify-content: space-evenly;
-        display: flex;
+    /* CARROSSEL */
+    .carousel-container {
+        overflow: hidden;
+        position: relative;
+        z-index: -1;
     }
+
+    .carousel {
+        display: flex;
+        width: 100%;
+        animation: pri-slide 90s infinite;
+        /* Ajuste a duração da animação conforme necessário */
+        transition: transform 0.5s ease;
+        /* Transição suave ao mudar a posição */
+        margin-left: 10px;
+        /* Adiciona espaço à esquerda */
+        height: 560px;
+        z-index: -1;
+    }
+
+    @keyframes pri-slide {
+        0% {
+            transform: translateX(0);
+        }
+
+        5% {
+            transform: translateX(0);
+        }
+
+        10% {
+            transform: translateX(-101%);
+        }
+
+        15% {
+            transform: translateX(-101%);
+        }
+
+        20% {
+            transform: translateX(-201%);
+        }
+
+        25% {
+            transform: translateX(-201%);
+        }
+
+        30% {
+            transform: translateX(-303%);
+        }
+
+        35% {
+            transform: translateX(-303%);
+        }
+
+        40% {
+            transform: translateX(-404%);
+        }
+
+        45% {
+            transform: translateX(-404%);
+        }
+
+        50% {
+            transform: translateX(-505%);
+        }
+
+        55% {
+            transform: translateX(-505%);
+        }
+
+        60% {
+            transform: translateX(-606%);
+        }
+
+        65% {
+            transform: translateX(-606%);
+        }
+
+        70% {
+            transform: translateX(-708%);
+        }
+
+        75% {
+            transform: translateX(-708%);
+        }
+
+        80% {
+            transform: translateX(-810%);
+        }
+
+        85% {
+            transform: translateX(-810%);
+        }
+
+        90% {
+            transform: translateX(-910%);
+        }
+
+        95% {
+            transform: translateX(-910%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+
+    .Card:first-child {
+        margin-left: 10px;
+        /* Adiciona espaço à esquerda para o primeiro item */
+    }
+
+    .Card {
+        flex: 0 0 300px;
+        width: 270px;
+        height: 550px;
+        margin-right: 50px;
+        background-color: #f0f0f0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5), -5px 0px 10px rgba(0, 0, 0, 0.5);
+        z-index: -1;
+        /* Colocar atrás do card */
+    }
+
+    .Card img {
+        margin-top: 0px;
+        width: 100%;
+    }
+
+
+    .card-content {
+        text-align: left;
+        /* Centralizar o conteúdo */
+    }
+
+    .card-content h3 {
+        padding: 9px 0px 0px 10px;
+        font-weight: 600;
+    }
+
+    .card-content h2 {
+        padding: 5px 0px 0px 10px;
+        color: #a80f2d;
+        font-weight: 600;
+    }
+
+    .card-content p {
+        padding: 10px 10px 0px 10px;
+        color: var(--Cinzatxt);
+        font-weight: 500;
+    }
+
+    .relogio {
+        display: flex;
+        align-items: center;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .relogio img {
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .relogio p {
+        text-align: left;
+        margin: 0px 0px 8px 0px;
+    }
+
+    /* Parte footer card home*/
+
+    .Card2 {
+        margin: -100px 0px -100px 0px;
+        margin-top: 30px;
+        width: 338px;
+        height: 520px;
+        text-align: center;
+    }
+
+    .Card2 img {
+        margin: -80px 0px 10px 0px;
+        width: 50vh;
+        height: auto;
+        /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9); */
+    }
+
+    .Card2 h3 {
+        display: none;
+    }
+
+    .Card2 p {
+        font-size: 1.2em;
+        padding: 10px 30px 0px 0px;
+        text-align: left;
+        color: var(--Cinzatxt);
+        font-weight: 450;
+
+    }
+
+    /* Parte footer Texto home*/
+
+    .Texto1 {
+
+        text-align: center;
+        margin-top: 30px;
+
+    }
+
+    .Texto1 h4 {
+        font-family: "Nunito", sans-serif;
+        margin: -20px 0px 20px 0px;
+        text-align: left;
+        color: #a0a0a0;
+        font-weight: 400;
+    }
+
+    .Texto1 h2 {
+        margin: 0px 0px 50px 0px;
+        font-family: "Dosis", sans-serif;
+        width: 330px;
+        font-size: 3em;
+        text-align: left;
+        color: var(--pretonrgb);
+        font-weight: 600;
+
+    }
+
+    .Texto2 {
+        text-align: center;
+
+    }
+
+    .Texto2 h4 {
+        font-family: "Nunito", sans-serif;
+        margin: 20px 0px -65px 0px;
+        text-align: center;
+        color: var(--pretonrgb);
+        font-weight: 400;
+    }
+
+    .Texto2 h2 {
+        font-family: "Dosis", sans-serif;
+        font-size: 1.5em;
+        text-align: center;
+        color: #a80f2d;
+        font-weight: 600;
+        margin-top: -45px;
+
+    }
+
+    /* Parte footer Texto home mais vantagens*/
+
+    #Texto1 h2 {
+        margin-top: 30px;
+        font-family: "Dosis", sans-serif;
+        font-size: 2em;
+        color: var(--Branco);
+        text-align: center;
+        font-weight: 600;
+
+    }
+
+    .container {
+        display: flex;
+        background-color: #a80f2d;
+        margin-top: -20px;
+        padding: 0px 0px 20px 0px;
+        padding-right: 30px;
+        padding-left: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .CardVantagem {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        border: var(--Branco) solid 1px;
+        background-color: #a80f2d;
+        padding: 40px 0px;
+        margin-top: 50px;
+        text-align: center;
+
+    }
+
+    .CardVantagem img {
+
+        margin-top: -20px;
+        margin-bottom: 10px;
+        width: 100px;
+        height: 105px;
+    }
+
+    .texto3 h3 {
+        text-align: center;
+        color: var(--Branco);
+        margin-bottom: 15px;
+        width: auto;
+
+    }
+
+    .texto3 p {
+
+        text-align: center;
+        color: var(--Branco);
+        width: 300px;
+    }
+
+    /* Parte footer Botão home*/
+
+    .Button2 {
+        width: 370px;
+        margin: 0px 34px 0px 0px;
+        font-family: "Nunito", sans-serif;
+        text-decoration: none;
+        background-color: var(--Vermelho-);
+        color: var(--Card);
+        padding: 12px 40px;
+        border-radius: 10px;
+        font-size: 1.2em;
+        font-weight: 500;
+        font-weight: bold;
+    }
+
+    .Button {
+        text-decoration: none;
+        background-color: var(--CadetBlue);
+        color: var(--Card);
+        padding: 12px 60px;
+        border-radius: 15px;
+        font-size: 1.2em;
+        font-weight: 500;
+        font-weight: bold;
+    }
+
 
     /* Cabeçalho */
     header {
@@ -1054,7 +1935,7 @@ nav ul {
     }
 
     nav ul li a:hover {
-        color: var(--Vermelho-);
+        color: var(--OrangeRed);
     }
 
     /* Banner */
