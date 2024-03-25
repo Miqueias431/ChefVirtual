@@ -503,6 +503,10 @@ footer {
     /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9); */
 }
 
+#img2 {
+    display: none;
+}
+
 .Card2 h3 {
     display: none;
 }
@@ -791,7 +795,7 @@ footer {
     .Card2 {
         display: flex;
         flex-direction: column;
-        margin: -100px 0px -70px 0px;
+        margin: -100px 0px -100px 0px;
         margin-top: 30px;
         width: 500px;
         height: 520px;
@@ -800,8 +804,9 @@ footer {
 
     .Card2 img {
         margin: -80px 0px 10px 0px;
-        width: auto;
-        height: 100vh;
+        max-width: 150vh ;
+        height: auto;
+        /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9); */
     }
 
     .Card2 h3 {
@@ -1091,7 +1096,7 @@ footer {
     }
 
     .Card2 img {
-        margin: -80px 0px 10px 0px;
+        margin: -80px 0px 0px 0px;
         width: auto;
         height: 100vh;
     }
@@ -1101,9 +1106,13 @@ footer {
     }
 
     .Card2 p {
+        display: flex;
         font-size: 1.5em;
         padding: 10px 30px 200px 0px;
+        margin-top: 30px;
+        margin-left: -150px;
         text-align: left;
+        width: 700px;
         color: var(--Cinzatxt);
         font-weight: 450;
 
@@ -1311,7 +1320,7 @@ footer {
     .carousel {
         display: flex;
         width: 105%;
-        animation: pri-slide 60s infinite;
+        animation: pri-slide 70s infinite;
         /* Ajuste a duração da animação conforme necessário */
         transition: transform 0.5s ease;
         /* Transição suave ao mudar a posição */
@@ -1346,11 +1355,11 @@ footer {
             transform: translateX(-190%);
         }
 
-        90% {
+        80% {
             transform: translateX(-223%);
         }
 
-        100% {
+        90% {
             transform: translateX(-223%);
         }
 
@@ -1361,7 +1370,7 @@ footer {
 
     .Card {
         flex: 0 0 280px;
-        margin-right: 40px;
+        margin-right: 50px;
     }
 
     .relogio {
@@ -1384,7 +1393,11 @@ footer {
 
     /* Parte footer card home*/
 
-
+    .Card2 {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 0px 0px;
+    }
 
     .Card2 img {
         margin: -80px 0px 10px -60px;
@@ -1397,9 +1410,9 @@ footer {
     }
 
     .Card2 p {
-        margin-left: -60px;
+        margin-left: -150px;
         margin-bottom: 30px;
-        width: 650px;
+        width: 800px;
         display: flex;
         font-size: 1.86em;
         padding: 10px 30px 0px 0px;
@@ -1567,13 +1580,8 @@ nav ul {
     }
 
     .carousel {
-        display: flex;
-        width: 100%;
         animation: pri-slide 70s infinite;
         transition: transform 0.5s ease;
-        margin-left: 10px;
-        height: 560px;
-        z-index: -1;
     }
 
     @keyframes pri-slide {
@@ -1586,27 +1594,27 @@ nav ul {
         }
 
         30% {
-            transform: translateX(-100%);
+            transform: translateX(-90%);
         }
 
         45% {
-            transform: translateX(-100%);
+            transform: translateX(-90%);
         }
 
         60% {
-            transform: translateX(-195%);
+            transform: translateX(-181%);
         }
 
         75% {
-            transform: translateX(-195%);
+            transform: translateX(-181%);
         }
 
         80% {
-            transform: translateX(-230%);
+            transform: translateX(-212%);
         }
 
         90% {
-            transform: translateX(-230%);
+            transform: translateX(-212%);
         }
 
         100% {
@@ -1616,14 +1624,14 @@ nav ul {
 
 
     .Card:first-child {
-        margin-left: 65px;
+        margin-left: 80px;
     }
 
     .Card {
         flex: 0 0 300px;
-        width: 270px;
+        max-width: 300px;
         height: 550px;
-        margin-right: 100px;
+        margin-right: 135px;
         background-color: #f0f0f0;
         display: flex;
         flex-direction: column;
@@ -1684,19 +1692,27 @@ nav ul {
 
     /* Parte footer card home*/
 
+    .Texto1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
+    }
+
     .Card2 {
-        margin: -100px 0px -100px 0px;
-        margin-top: 30px;
-        width: 338px;
-        height: 520px;
-        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
     }
 
     .Card2 img {
-        margin: -80px 0px 10px 0px;
-        width: 50vh;
-        height: auto;
-        /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9); */
+        display: flex;
+        width: 400px;
+        height: 200px;
+        
+        flex-direction: column;
+        margin: 0px 50px 0px 50px;
     }
 
     .Card2 h3 {
@@ -1704,41 +1720,34 @@ nav ul {
     }
 
     .Card2 p {
-        font-size: 1.2em;
-        padding: 10px 30px 0px 0px;
-        text-align: left;
-        color: var(--Cinzatxt);
-        font-weight: 450;
-
+        display: flex;
+        flex-direction: column;
+        font-size: 0.5em;
     }
 
-    /* Parte footer Texto home*/
-
-    .Texto1 {
-
-        text-align: center;
-        margin-top: 30px;
-
+    #img2 {
+        justify-content: space-between;
+        display: flex;
+        width: 50vh;
+        height: auto;
     }
 
-    .Texto1 h4 {
+    .Button2 {
+        flex-direction: row;
+        width: 370px;
+        margin: 0px 34px 0px 0px;
         font-family: "Nunito", sans-serif;
-        margin: -20px 0px 20px 0px;
-        text-align: left;
-        color: #a0a0a0;
-        font-weight: 400;
+        text-decoration: none;
+        background-color: var(--Vermelho-);
+        color: var(--Card);
+        padding: 12px 40px;
+        border-radius: 10px;
+        font-size: 1.2em;
+        font-weight: 500;
+        font-weight: bold;
     }
-
-    .Texto1 h2 {
-        margin: 0px 0px 50px 0px;
-        font-family: "Dosis", sans-serif;
-        width: 330px;
-        font-size: 3em;
-        text-align: left;
-        color: var(--pretonrgb);
-        font-weight: 600;
-
-    }
+    
+    /* Uma Parte Texto do carrossel */
 
     .Texto2 {
         text-align: center;
@@ -1783,19 +1792,7 @@ nav ul {
 
     /* Parte footer Botão home*/
 
-    .Button2 {
-        width: 370px;
-        margin: 0px 34px 0px 0px;
-        font-family: "Nunito", sans-serif;
-        text-decoration: none;
-        background-color: var(--Vermelho-);
-        color: var(--Card);
-        padding: 12px 40px;
-        border-radius: 10px;
-        font-size: 1.2em;
-        font-weight: 500;
-        font-weight: bold;
-    }
+    
 
     .Button {
         text-decoration: none;
