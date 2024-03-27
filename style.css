@@ -1682,8 +1682,9 @@ nav ul {
         margin: 16px 0px 16px 0px;
     }
 
-    button {
+    .button {
         border: solid var(--Vermelho-);
+        text-decoration: none;
         background-color: #fff;
         transition: .5s;
         padding: 8px;
@@ -1694,7 +1695,7 @@ nav ul {
         font-size: 1.1em;
     }
 
-    button:hover {
+    .button:hover {
         background-color: var(--Vermelho-);
         transition: .5s;
         color: white;
