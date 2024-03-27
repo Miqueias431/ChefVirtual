@@ -492,7 +492,6 @@ footer {
     margin-top: 250px;
     margin-right: 0;
     margin-bottom: 50px;
-    border: solid green;
     width: 400px;
     height: 400px;
 
@@ -508,7 +507,6 @@ footer {
 
 button {
     background-color: var(--Vermelho-);
-    border: solid blue;
     transition: .5s;
     padding: 8px;
     border-radius: 8px;
@@ -522,7 +520,6 @@ button {
     display: flex;
     flex-direction: column;
     margin: 0 0 0 255px;
-    border: solid red;
     width: 600px;
     max-height: 230px;
     text-align: left;
@@ -1770,7 +1767,6 @@ nav ul {
     .conteudo-topo {
         margin: 50px 0px 0px 0px;
         align-items: center;
-        
     }
 
     .conteudo-topo p {
