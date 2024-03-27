@@ -1819,10 +1819,12 @@ nav ul {
 
     nav ul li a {
         color: black;
+        transition: 0.5s;
     }
 
     nav ul li a:hover {
         color: var(--OrangeRed);
+        transition: .5s;
     }
 
     /* Banner */
