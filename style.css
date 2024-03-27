@@ -120,7 +120,7 @@ section {
 
 /***************** Cabeçalho ******************/
 header {
-    height: 102px;
+    height: 105px;
 }
 
 #h3 {
@@ -130,7 +130,7 @@ header {
 #logo img {
     width: 101px;
     height: 101px;
-    margin: 1px 0px 0px 3px;
+    margin: 3px 0;
 }
 
 #check {
@@ -151,7 +151,7 @@ nav ul {
     background-color: var(--Vermelho-rgb);
     height: 100vh;
     position: fixed;
-    top: 80px;
+    top: 104px;
     right: -70%;
     /*Estratégia para 
     recolher o menu*/
@@ -411,6 +411,36 @@ footer {
     }
 }
 
+/* Uma Parte Texto do carrossel */
+
+.Container-In {
+    background-color: #a80f2d;
+    max-width: 100%;
+    height: 150px;
+}
+
+.Texto2 {
+    text-align: center;
+    margin-top: 85px;
+}
+
+.Texto2 h4 {
+    font-family: "Nunito", sans-serif;
+    margin: 20px 0px -65px 0px;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+
+}
+
+.Texto2 h2 {
+    font-family: "Dosis", sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    margin-top: -45px;
+}
 
 .Card:first-child {
     margin-left: 10px;
@@ -482,7 +512,76 @@ footer {
 
 /* Parte footer card home*/
 
+.container-h {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    /* Adicionei a altura total da viewport */
+}
 
+.teste2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 0px;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.conteudo p {
+    text-align: left;
+    width: auto;
+    margin: 16px 0px 16px 10px;
+}
+
+.conteudo2 {
+    display: none;
+}
+
+.button {
+    text-decoration: none;
+    background-color: var(--Vermelho-);
+    transition: .5s;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 16px;
+    color: #fff;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.2em;
+}
+
+.conteudo-topo {
+    margin-left: 10px;
+    align-items: center;
+}
+
+.conteudo-topo p {
+    display: none;
+}
+
+.conteudo-topo h4 {
+    font-family: "Nunito", sans-serif;
+    text-align: left;
+    color: #a0a0a0;
+    font-weight: 400;
+    margin: 32px 0;
+}
+
+.conteudo-topo h2 {
+    font-family: "Dosis", sans-serif;
+
+    text-align: left;
+    color: #000000;
+    font-weight: 600;
+    width: 200px;
+    margin-bottom: 20px;
+}
 
 /* Parte footer Texto home*/
 
@@ -509,29 +608,6 @@ footer {
     text-align: left;
     color: var(--pretonrgb);
     font-weight: 600;
-
-}
-
-.Texto2 {
-    text-align: center;
-
-}
-
-.Texto2 h4 {
-    font-family: "Nunito", sans-serif;
-    margin: 20px 0px -65px 0px;
-    text-align: center;
-    color: var(--pretonrgb);
-    font-weight: 400;
-}
-
-.Texto2 h2 {
-    font-family: "Dosis", sans-serif;
-    font-size: 1.5em;
-    text-align: center;
-    color: #a80f2d;
-    font-weight: 600;
-    margin-top: -45px;
 
 }
 
@@ -594,19 +670,6 @@ footer {
 
 /* Parte footer Botão home*/
 
-.Button2 {
-    width: 370px;
-    margin: 0px 34px 0px 0px;
-    font-family: "Nunito", sans-serif;
-    text-decoration: none;
-    background-color: var(--Vermelho-);
-    color: var(--Card);
-    padding: 12px 40px;
-    border-radius: 10px;
-    font-size: 1.2em;
-    font-weight: 500;
-    font-weight: bold;
-}
 
 .Button {
     text-decoration: none;
@@ -804,25 +867,25 @@ footer {
 
     .Texto2 {
         text-align: center;
-
+        margin-top: 85px;
     }
 
     .Texto2 h4 {
         font-family: "Nunito", sans-serif;
         margin: 20px 0px -65px 0px;
         text-align: center;
-        color: var(--pretonrgb);
+        color: #fff;
         font-weight: 400;
+
     }
 
     .Texto2 h2 {
         font-family: "Dosis", sans-serif;
         font-size: 1.5em;
         text-align: center;
-        color: #a80f2d;
+        color: #fff;
         font-weight: 600;
         margin-top: -45px;
-
     }
 
     /* Parte footer Texto home mais vantagens*/
@@ -905,18 +968,6 @@ footer {
     #banner3 h2 {
         font-family: "Dosis", sans-serif;
         font-size: 1.2em;
-    }
-
-
-    header {
-        max-width: 540px;
-        margin: 0 auto;
-    }
-
-    #logo img {
-        width: 108px;
-        height: 108px;
-        margin: -3px 0px 0px 1px;
     }
 
     .Flex {
@@ -1102,25 +1153,25 @@ footer {
 
     .Texto2 {
         text-align: center;
+        margin-top: 85px;
     }
 
     .Texto2 h4 {
         font-family: "Nunito", sans-serif;
         margin: 20px 0px -65px 0px;
         text-align: center;
-        color: var(--pretonrgb);
+        color: #fff;
         font-weight: 400;
-        font-size: 1.5em;
+
     }
 
     .Texto2 h2 {
         font-family: "Dosis", sans-serif;
-        font-size: 2em;
+        font-size: 1.5em;
         text-align: center;
-        color: #a80f2d;
+        color: #fff;
         font-weight: 600;
         margin-top: -45px;
-
     }
 
     /* Parte footer Texto home mais vantagens*/
@@ -1236,15 +1287,14 @@ footer {
 
     /* Cabeçalho */
     header {
-        max-width: 720px;
-        height: 100px;
-
+        max-width: auto;
+        height: 120px;
     }
 
     #logo img {
-        width: 108px;
-        height: 108px;
-        margin: -4px 0px 0px 0px;
+        width: 120px;
+        height: 120px;
+        margin: 2px 0;
     }
 
     label {
@@ -1254,9 +1304,7 @@ footer {
     }
 
     nav ul {
-        top: 100px;
-        right: -50%;
-        width: 50%;
+        top: 120px;
     }
 
     nav ul li a {
@@ -1406,25 +1454,25 @@ footer {
 
     .Texto2 {
         text-align: center;
+        margin-top: 85px;
     }
 
     .Texto2 h4 {
         font-family: "Nunito", sans-serif;
-        margin: 20px 0px -30px 0px;
+        margin: 20px 0px -65px 0px;
         text-align: center;
-        color: var(--pretonrgb);
+        color: #fff;
         font-weight: 400;
-        font-size: 1.5em;
+
     }
 
     .Texto2 h2 {
         font-family: "Dosis", sans-serif;
-        font-size: 2em;
+        font-size: 1.5em;
         text-align: center;
-        color: #a80f2d;
+        color: #fff;
         font-weight: 600;
-        margin-top: -10px;
-
+        margin-top: -45px;
     }
 
     /* Parte footer Texto home mais vantagens*/
@@ -1501,31 +1549,12 @@ footer {
 }
 
 /* Cabeçalho */
-header {
-    max-width: 960px;
-    height: 100px;
-
-}
-
-#logo img {
-    width: 107px;
-    height: 107px;
-    margin: -5px 0px 0px 0px;
-}
 
 label {
     font-size: 3em;
     top: 10px;
     right: 10px;
 }
-
-nav ul {
-    top: 100px;
-    right: -50%;
-    width: 50%;
-}
-
-
 
 /* PCs ou notebooks HD + >>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
@@ -1655,6 +1684,13 @@ nav ul {
 
     /* Parte footer card home*/
 
+    .container-h {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        /* Adicionei a altura total da viewport */
+    }
+
     .teste2 {
         display: flex;
         justify-content: center;
@@ -1731,7 +1767,7 @@ nav ul {
 
     /* Uma Parte Texto do carrossel */
 
-    .Container-In{
+    .Container-In {
         background-color: #a80f2d;
         width: 100%;
         height: 150px;
