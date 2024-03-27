@@ -1731,16 +1731,22 @@ nav ul {
 
     /* Uma Parte Texto do carrossel */
 
+    .Container-In{
+        background-color: #a80f2d;
+        width: 100%;
+        height: 150px;
+    }
+
     .Texto2 {
         text-align: center;
-        margin-top: 40px;
+        margin-top: 70px;
     }
 
     .Texto2 h4 {
         font-family: "Nunito", sans-serif;
         margin: 20px 0px -65px 0px;
         text-align: center;
-        color: var(--pretonrgb);
+        color: #fff;
         font-weight: 400;
     }
 
@@ -1748,7 +1754,7 @@ nav ul {
         font-family: "Dosis", sans-serif;
         font-size: 1.5em;
         text-align: center;
-        color: #a80f2d;
+        color: #fff;
         font-weight: 600;
         margin-top: -45px;
 
@@ -1790,14 +1796,14 @@ nav ul {
 
     /* Cabeçalho */
     header {
-        height: 100px;
+        height: 140px;
 
     }
 
     #logo img {
-        width: 108px;
-        height: 108px;
-        margin: -5px 0px 0px 0px;
+        width: 150px;
+        height: 150px;
+        margin: 3px 0;
     }
 
     label {
@@ -1829,17 +1835,19 @@ nav ul {
 
     /* Banner */
     #banner {
+        margin-top: 20px;
         height: 55vh;
         background-position: center;
     }
 
     #banner h1 {
-        font-size: 2.75em;
+        font-size: 3.2em;
         margin-top: 0px;
+        margin-bottom: 10px;
     }
 
     #banner h2 {
-        font-size: 1.6em;
+        font-size: 2.2em;
         font-weight: 600;
     }
 
@@ -1884,17 +1892,5 @@ nav ul {
         max-width: unset;
     }
 
-    /* Cabeçalho */
-    header {
-        max-width: 1360px;
-        height: 100px;
 
-    }
-
-    #logo img {
-        width: 110px;
-        height: 110px;
-        margin: -4.5px 0px 0px 0px;
-
-    }
 }
