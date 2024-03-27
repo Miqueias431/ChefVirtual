@@ -75,8 +75,7 @@ section {
 
 .Flex,
 .FlexSobre,
-.FlexMenu,
-.FlexHome {
+.FlexMenu {
     display: Flex;
 }
 
@@ -93,11 +92,6 @@ section {
 
 .FlexMenu {
     justify-content: space-between;
-}
-
-.FlexHome {
-    justify-content: space-around;
-
 }
 
 .Botao {
@@ -488,37 +482,74 @@ footer {
 
 /* Parte footer card home*/
 
-.Card2 {
-    margin: -100px 0px -100px 0px;
-    margin-top: 30px;
-    max-width: 400px;
-    height: 520px;
-    text-align: center;
+.teste2 {
+
 }
 
-.Card2 img {
-    margin: -80px 0px 10px 0px;
-    max-width:50vh ;
-    height: auto;
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9); */
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+    margin-right: 0;
+    margin-bottom: 50px;
+    border: solid green;
+    width: 400px;
+    height: 400px;
+
 }
 
-#img2 {
+.conteudo p {
+
+}
+
+.conteudo2 {
     display: none;
 }
 
-.Card2 h3 {
-    display: none;
+button {
+    background-color: var(--Vermelho-);
+    border: solid blue;
+    transition: .5s;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 16px;
+    color: #fff;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.1em;
 }
 
-.Card2 p {
-    font-size: 1.2em;
-    padding: 10px 30px 0px 0px;
+.conteudo-topo {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 255px;
+    border: solid red;
+    width: 600px;
+    max-height: 230px;
     text-align: left;
-    color: var(--Cinzatxt);
-    font-weight: 450;
-
 }
+
+.conteudo-topo p {
+    display: none;
+}
+
+.conteudo-topo h4 {
+    font-family: "Nunito", sans-serif;
+    text-align: left;
+    color: #a0a0a0;
+    font-weight: 400;
+    margin: 16px 0;
+}
+
+.conteudo-topo h2 {
+    font-family: "Dosis", sans-serif;
+    font-size: 2em;
+    text-align: left;
+    color: #000000;
+    font-weight: 600;
+    width: 300px;
+}
+
+
 
 /* Parte footer Texto home*/
 
@@ -623,7 +654,6 @@ footer {
 }
 
 .texto3 p {
-
     text-align: center;
     color: var(--Branco);
     width: 300px;
@@ -804,7 +834,7 @@ footer {
 
     .Card2 img {
         margin: -80px 0px 10px 0px;
-        max-width: 150vh ;
+        max-width: 150vh;
         height: auto;
         /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9); */
     }
@@ -1630,7 +1660,7 @@ nav ul {
     .Card {
         flex: 0 0 300px;
         max-width: 300px;
-        height: 550px;
+        height: 570px;
         margin-right: 135px;
         background-color: #f0f0f0;
         display: flex;
@@ -1675,7 +1705,7 @@ nav ul {
     .relogio {
         display: flex;
         align-items: center;
-        margin: 20px 0px 0px 0px;
+        margin: -10px 0px 0px 0px;
     }
 
     .relogio img {
@@ -1692,66 +1722,85 @@ nav ul {
 
     /* Parte footer card home*/
 
-    .Texto1{
+    .teste2 {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        height: auto;
+        justify-content: center;
+        margin-top: 16px;
     }
 
-    .Card2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        height: auto;
-    }
-
-    .Card2 img {
-        display: flex;
-        width: 400px;
-        height: 200px;
-        
-        flex-direction: column;
-        margin: 0px 50px 0px 50px;
-    }
-
-    .Card2 h3 {
-        display: none;
-    }
-
-    .Card2 p {
+    .conteudo,
+    .conteudo2 {
         display: flex;
         flex-direction: column;
-        font-size: 0.5em;
+        align-items: center;
+        margin: 20px 0px 50px 80px;
+
     }
 
-    #img2 {
-        justify-content: space-between;
-        display: flex;
-        width: 50vh;
-        height: auto;
+    .conteudo p {
+        text-align: center;
+        width: 379px;
+        margin: 16px 0px 16px 0px;
     }
 
-    .Button2 {
-        flex-direction: row;
-        width: 370px;
-        margin: 0px 34px 0px 0px;
+    .conteudo2 p {
+        text-align: center;
+        width: 379px;
+        margin: 16px 0px 16px 0px;
+    }
+
+    button {
+        border: solid var(--Vermelho-);
+        background-color: #fff;
+        transition: .5s;
+        padding: 8px;
+        border-radius: 8px;
+        margin-top: 16px;
+        color: #000000;
         font-family: "Nunito", sans-serif;
-        text-decoration: none;
-        background-color: var(--Vermelho-);
-        color: var(--Card);
-        padding: 12px 40px;
-        border-radius: 10px;
-        font-size: 1.2em;
-        font-weight: 500;
-        font-weight: bold;
+        font-size: 1.1em;
     }
-    
+
+    button:hover {
+        background-color: var(--Vermelho-);
+        transition: .5s;
+        color: white;
+    }
+
+    .conteudo-topo {
+        margin: 50px 0px 0px 0px;
+        align-items: center;
+        
+    }
+
+    .conteudo-topo p {
+        display: flex;
+        margin: 16px 0;
+        max-width: 500px;
+    }
+
+    .conteudo-topo h4 {
+        font-family: "Nunito", sans-serif;
+        text-align: left;
+        color: #a0a0a0;
+        font-weight: 400;
+        margin: 16px 0;
+    }
+
+    .conteudo-topo h2 {
+        font-family: "Dosis", sans-serif;
+        font-size: 2em;
+        text-align: left;
+        color: #000000;
+        font-weight: 600;
+        width: 300px;
+    }
+
     /* Uma Parte Texto do carrossel */
 
     .Texto2 {
         text-align: center;
-
+        margin-top: 40px;
     }
 
     .Texto2 h4 {
@@ -1792,7 +1841,7 @@ nav ul {
 
     /* Parte footer Botão home*/
 
-    
+
 
     .Button {
         text-decoration: none;
