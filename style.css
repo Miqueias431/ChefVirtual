@@ -315,7 +315,7 @@ footer {
 .carousel {
     display: flex;
     width: 100%;
-    animation: pri-slide 75s infinite;
+    animation: pri-slide 20s infinite;
     /* Ajuste a duração da animação conforme necessário */
     transition: transform 0.5s ease;
     /* Transição suave ao mudar a posição */
@@ -343,73 +343,75 @@ footer {
     }
 
     20% {
-        transform: translateX(-188%);
+        transform: translateX(-178%);
     }
 
     25% {
-        transform: translateX(-188%);
+        transform: translateX(-178%);
     }
 
     30% {
-        transform: translateX(-283%);
+        transform: translateX(-264%);
     }
 
     35% {
-        transform: translateX(-283%);
+        transform: translateX(-264%);
     }
 
     40% {
-        transform: translateX(-378%);
+        transform: translateX(-354%);
     }
 
     45% {
-        transform: translateX(-378%);
+        transform: translateX(-354%);
     }
 
     50% {
-        transform: translateX(-473%);
+        transform: translateX(-439%);
     }
 
     55% {
-        transform: translateX(-473%);
+        transform: translateX(-439%);
     }
 
     60% {
-        transform: translateX(-567%);
+        transform: translateX(-529%);
     }
 
     65% {
-        transform: translateX(-567%);
+        transform: translateX(-529%);
     }
 
     70% {
-        transform: translateX(-662%);
+        transform: translateX(-615%);
     }
 
     75% {
-        transform: translateX(-662%);
+        transform: translateX(-615%);
     }
 
     80% {
-        transform: translateX(-759%);
+        transform: translateX(-703%);
     }
 
     85% {
-        transform: translateX(-759%);
+        transform: translateX(-703%);
     }
 
     90% {
-        transform: translateX(-854%);
+        transform: translateX(-790%);
     }
 
     95% {
-        transform: translateX(-854%);
+        transform: translateX(-790%);
     }
 
     100% {
         transform: translateX(0);
     }
 }
+
+
 
 /* Uma Parte Texto do carrossel */
 
@@ -451,7 +453,7 @@ footer {
     flex: 0 0 300px;
     max-width: 270px;
     height: 550px;
-    margin-right: 60px;
+    margin-right: 32px;
     background-color: #f0f0f0;
     display: flex;
     flex-direction: column;
@@ -536,7 +538,7 @@ footer {
 
 .conteudo p {
     text-align: left;
-    width: auto;
+    width: 340px;
     margin: 16px 0px 16px 10px;
 }
 
@@ -818,35 +820,35 @@ footer {
 
     /* Parte footer card home*/
 
-    .Card2 {
-        display: flex;
-        flex-direction: column;
-        margin: -100px 0px -100px 0px;
-        margin-top: 30px;
-        width: 500px;
-        height: 520px;
-        text-align: center;
-    }
-
-    .Card2 img {
-        margin: -80px 0px 10px 0px;
-        max-width: 150vh;
+    .teste2 img{
+        width:auto;
         height: auto;
-        /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9); */
     }
 
-    .Card2 h3 {
+    .conteudo p {
+        font-size: 1.3em;
+        width: 600px;
+        
+    }
+
+    .conteudo2 {
         display: none;
     }
 
-    .Card2 p {
-        font-size: 1.2em;
-        padding: 10px 30px 200px 0px;
-        text-align: left;
-        color: var(--Cinzatxt);
-        font-weight: 450;
-
+    .button {
+        font-size: 1.4em;
     }
+
+    .conteudo-topo h4 {
+        font-size: 1.2em;
+    }
+
+    .conteudo-topo h2 {
+        font-size: 2em;
+        width: 300px;
+    }
+
+
 
     /* Parte footer Texto home*/
 
@@ -1005,6 +1007,12 @@ footer {
     #autor {
         font-size: 0.75em;
     }
+
+    label {
+        font-size: 3em;
+        top: 20px;
+        right: 10px;
+    }
 }
 
 
@@ -1099,37 +1107,32 @@ footer {
 
     /* Parte footer card home*/
 
-    .Card2 {
-        display: flex;
-        flex-direction: column;
-        margin: -100px 0px -10px 0px;
-        margin-top: 30px;
-        width: 500px;
-        height: 520px;
-        text-align: center;
+    .teste2 img{
+        width: 45vh;
+        height: auto;
     }
 
-    .Card2 img {
-        margin: -80px 0px 0px 0px;
-        width: auto;
-        height: 100vh;
+    .conteudo p {
+        font-size: 1.3em;
+        width: 600px;
+        margin-bottom: 50px;
     }
 
-    .Card2 h3 {
+    .conteudo2 {
         display: none;
     }
 
-    .Card2 p {
-        display: flex;
-        font-size: 1.5em;
-        padding: 10px 30px 200px 0px;
-        margin-top: 30px;
-        margin-left: -150px;
-        text-align: left;
-        width: 700px;
-        color: var(--Cinzatxt);
-        font-weight: 450;
+    .button {
+        font-size: 1.4em;
+    }
 
+    .conteudo-topo h4 {
+        font-size: 1.2em;
+    }
+
+    .conteudo-topo h2 {
+        font-size: 2em;
+        width: 300px;
     }
 
     /* Parte footer Texto home*/
@@ -1288,18 +1291,18 @@ footer {
     /* Cabeçalho */
     header {
         max-width: auto;
-        height: 120px;
+        height: 150px;
     }
 
     #logo img {
-        width: 120px;
-        height: 120px;
-        margin: 2px 0;
+        width: 140px;
+        height: 140px;
+        margin: 4px 0;
     }
 
     label {
         font-size: 3em;
-        top: 10px;
+        top: 40px;
         right: 10px;
     }
 
@@ -1404,33 +1407,32 @@ footer {
 
     /* Parte footer card home*/
 
-    .Card2 {
-        display: flex;
-        flex-direction: column;
-        margin: 0px 0px 0px 0px;
+    .teste2 img{
+        width: 65vh;
+        height: auto;
     }
 
-    .Card2 img {
-        margin: -80px 0px 10px -60px;
-        width: 600px;
-        height: 50vh;
+    .conteudo p {
+        font-size: 1.7em;
+        width: 700px;
+        margin-bottom: 50px;
     }
 
-    .Card2 h3 {
+    .conteudo2 {
         display: none;
     }
 
-    .Card2 p {
-        margin-left: -150px;
-        margin-bottom: 30px;
-        width: 800px;
-        display: flex;
-        font-size: 1.86em;
-        padding: 10px 30px 0px 0px;
-        text-align: left;
-        color: var(--Cinzatxt);
-        font-weight: 450;
+    .button {
+        font-size: 1.4em;
+    }
 
+    .conteudo-topo h4 {
+        font-size: 1.2em;
+    }
+
+    .conteudo-topo h2 {
+        font-size: 2em;
+        width: 300px;
     }
 
     /* Parte footer Texto home*/
@@ -1454,7 +1456,7 @@ footer {
 
     .Texto2 {
         text-align: center;
-        margin-top: 85px;
+        margin-top: 0px;
     }
 
     .Texto2 h4 {
@@ -1463,7 +1465,7 @@ footer {
         text-align: center;
         color: #fff;
         font-weight: 400;
-
+        font-size: 1.3em;
     }
 
     .Texto2 h2 {
@@ -1472,7 +1474,8 @@ footer {
         text-align: center;
         color: #fff;
         font-weight: 600;
-        margin-top: -45px;
+        margin-top: 20px;
+        font-size: 2.5em;
     }
 
     /* Parte footer Texto home mais vantagens*/
@@ -1549,12 +1552,6 @@ footer {
 }
 
 /* Cabeçalho */
-
-label {
-    font-size: 3em;
-    top: 10px;
-    right: 10px;
-}
 
 /* PCs ou notebooks HD + >>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
@@ -1706,7 +1703,14 @@ label {
 
     }
 
+    .conteudo img,
+    .conteudo2 img{
+        width: auto;
+        height: auto;
+    }
+
     .conteudo p {
+        font-size: 1em;
         text-align: center;
         width: 379px;
         margin: 16px 0px 16px 0px;
