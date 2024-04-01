@@ -827,15 +827,15 @@ footer {
 
     /* Parte footer card home*/
 
-    .teste2 img{
-        width:auto;
+    .teste2 img {
+        width: auto;
         height: auto;
     }
 
     .conteudo p {
         font-size: 1.3em;
         width: 600px;
-        
+
     }
 
     .conteudo2 {
@@ -1114,7 +1114,7 @@ footer {
 
     /* Parte footer card home*/
 
-    .teste2 img{
+    .teste2 img {
         width: 45vh;
         height: auto;
     }
@@ -1413,7 +1413,7 @@ footer {
 
     /* Parte footer card home*/
 
-    .teste2 img{
+    .teste2 img {
         width: 65vh;
         height: auto;
     }
@@ -1557,8 +1557,6 @@ footer {
     }
 }
 
-/* Cabeçalho */
-
 /* PCs ou notebooks HD + >>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
 
@@ -1616,7 +1614,6 @@ footer {
             transform: translateX(0);
         }
     }
-
 
     .Card:first-child {
         margin-left: 80px;
@@ -1710,7 +1707,7 @@ footer {
     }
 
     .conteudo img,
-    .conteudo2 img{
+    .conteudo2 img {
         width: auto;
         height: auto;
     }
@@ -1937,6 +1934,4 @@ footer {
         flex: 1;
         max-width: unset;
     }
-
-
 }
