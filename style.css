@@ -305,6 +305,13 @@ footer {
     margin-bottom: 12px;
 }
 
+#social img {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
 /* CARROSSEL */
 .carousel-container {
     overflow: hidden;
@@ -315,7 +322,7 @@ footer {
 .carousel {
     display: flex;
     width: 100%;
-    animation: pri-slide 20s infinite;
+    animation: pri-slide 90s infinite;
     /* Ajuste a duração da animação conforme necessário */
     transition: transform 0.5s ease;
     /* Transição suave ao mudar a posição */
@@ -757,7 +764,7 @@ footer {
     .carousel {
         display: flex;
         width: 100%;
-        animation: pri-slide 70s infinite;
+        animation: pri-slide 80s infinite;
         /* Ajuste a duração da animação conforme necessário */
         transition: transform 0.5s ease;
         /* Transição suave ao mudar a posição */
@@ -777,35 +784,35 @@ footer {
         }
 
         20% {
-            transform: translateX(-101%);
+            transform: translateX(-96%);
         }
 
         30% {
-            transform: translateX(-101%);
+            transform: translateX(-96%);
         }
 
         40% {
-            transform: translateX(-201%);
+            transform: translateX(-190%);
         }
 
         50% {
-            transform: translateX(-201%);
+            transform: translateX(-190%);
         }
 
         60% {
-            transform: translateX(-301%);
+            transform: translateX(-285%);
         }
 
         70% {
-            transform: translateX(-301%);
+            transform: translateX(-285%);
         }
 
         80% {
-            transform: translateX(-401%);
+            transform: translateX(-378%);
         }
 
         90% {
-            transform: translateX(-401%);
+            transform: translateX(-378%);
         }
 
         100% {
@@ -814,8 +821,8 @@ footer {
     }
 
     .Card {
-        flex: 0 0 240px;
-        margin-right: 30px;
+        flex: 0 0 235px;
+        margin-right: 20px;
     }
 
     /* Parte footer card home*/
@@ -1034,7 +1041,7 @@ footer {
     .carousel {
         display: flex;
         width: 100%;
-        animation: pri-slide 60s infinite;
+        animation: pri-slide 70s infinite;
         /* Ajuste a duração da animação conforme necessário */
         transition: transform 0.5s ease;
         /* Transição suave ao mudar a posição */
@@ -1054,27 +1061,27 @@ footer {
         }
 
         28.56% {
-            transform: translateX(-98%);
+            transform: translateX(-96%);
         }
 
         42.84% {
-            transform: translateX(-98%);
+            transform: translateX(-96%);
         }
 
         57.12% {
-            transform: translateX(-196%);
+            transform: translateX(-190%);
         }
 
         71.14% {
-            transform: translateX(-196%);
+            transform: translateX(-190%);
         }
 
         85.68% {
-            transform: translateX(-230%);
+            transform: translateX(-222%);
         }
 
         90% {
-            transform: translateX(-230%);
+            transform: translateX(-222%);
         }
 
         100% {
@@ -1083,8 +1090,8 @@ footer {
     }
 
     .Card {
-        flex: 0 0 215px;
-        margin-right: 20px;
+        flex: 0 0 212px;
+        margin-right: 15px;
     }
 
     .relogio {
@@ -1290,8 +1297,7 @@ footer {
 
     /* Cabeçalho */
     header {
-        max-width: auto;
-        height: 150px;
+        height: 145px;
     }
 
     #logo img {
@@ -1307,7 +1313,7 @@ footer {
     }
 
     nav ul {
-        top: 120px;
+        top: 150px;
     }
 
     nav ul li a {
@@ -1334,7 +1340,7 @@ footer {
     .carousel {
         display: flex;
         width: 105%;
-        animation: pri-slide 70s infinite;
+        animation: pri-slide 15s infinite;
         /* Ajuste a duração da animação conforme necessário */
         transition: transform 0.5s ease;
         /* Transição suave ao mudar a posição */
@@ -1354,27 +1360,27 @@ footer {
         }
 
         30% {
-            transform: translateX(-95%);
+            transform: translateX(-91%);
         }
 
         45% {
-            transform: translateX(-95%);
+            transform: translateX(-91%);
         }
 
         60% {
-            transform: translateX(-190%);
+            transform: translateX(-182%);
         }
 
         75% {
-            transform: translateX(-190%);
+            transform: translateX(-182%);
         }
 
         80% {
-            transform: translateX(-223%);
+            transform: translateX(-211%);
         }
 
         90% {
-            transform: translateX(-223%);
+            transform: translateX(-211%);
         }
 
         100% {
@@ -1383,8 +1389,8 @@ footer {
     }
 
     .Card {
-        flex: 0 0 280px;
-        margin-right: 50px;
+        flex: 0 0 270px;
+        margin-right: 35px;
     }
 
     .relogio {
@@ -1869,7 +1875,7 @@ footer {
     }
 
     nav ul li a:hover {
-        color: var(--OrangeRed);
+        color: #a80f2d;
         transition: .5s;
     }
 
