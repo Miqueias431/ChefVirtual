@@ -1667,7 +1667,7 @@ footer {
     .relogio {
         display: flex;
         align-items: center;
-        margin: -10px 0px 0px 0px;
+        margin: 35px 0px 0px 0px;
     }
 
     .relogio img {
@@ -1802,8 +1802,6 @@ footer {
         margin-top: -45px;
 
     }
-
-    /* Quero fazer uma separação de 2 colunas sendo que as duas colunas terão a mesma quantidade de itens */
 
     .container {
         display: flex;
