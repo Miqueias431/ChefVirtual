@@ -1340,7 +1340,7 @@ footer {
     .carousel {
         display: flex;
         width: 105%;
-        animation: pri-slide 15s infinite;
+        animation: pri-slide 70s infinite;
         /* Ajuste a duração da animação conforme necessário */
         transition: transform 0.5s ease;
         /* Transição suave ao mudar a posição */
