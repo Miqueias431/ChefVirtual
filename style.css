@@ -322,9 +322,12 @@ footer {
 .carousel {
     display: flex;
     width: 100%;
-    animation: pri-slide 90s infinite; /* Ajuste a duração da animação conforme necessário */
-    transition: transform 0.5s ease; /* Transição suave ao mudar a posição */
-    margin-left: 10px; /* Adiciona espaço à esquerda */
+    animation: pri-slide 90s infinite;
+    /* Ajuste a duração da animação conforme necessário */
+    transition: transform 0.5s ease;
+    /* Transição suave ao mudar a posição */
+    margin-left: 10px;
+    /* Adiciona espaço à esquerda */
     height: 560px;
     z-index: -1;
 }
@@ -686,30 +689,6 @@ footer {
     font-size: 1.2em;
     font-weight: 500;
     font-weight: bold;
-}
-
-/* Links Menu Gourmet */
-
-#link {
-    display: flex;
-}
-
-#link li {
-    list-style: none;
-    background-color: var(--button);
-    width: 130px;
-    text-align: center;
-    padding: 12px 12px;
-    margin: 10px 20px 0px 20px;
-    border-radius: 35px;
-    font-size: 1em;
-    font-weight: 500;
-    font-weight: bold;
-}
-
-#link li a {
-    text-decoration: none;
-    color: var(--textcolor);
 }
 
 /* FOOTER SOBRE */
@@ -1268,29 +1247,7 @@ footer {
         font-size: 1.5em;
     }
 
-    /* Links Menu Gourmet */
 
-    #link {
-        display: flex;
-    }
-
-    #link li {
-        list-style: none;
-        background-color: var(--Vermelho-);
-        width: 180px;
-        text-align: center;
-        padding: 14px 14px;
-        margin: 10px 20px 0px 20px;
-        border-radius: 35px;
-        font-size: 1.5em;
-        font-weight: 500;
-        font-weight: bold;
-    }
-
-    #link li a {
-        text-decoration: none;
-        color: var(--textcolor);
-    }
 
     /* Cabeçalho */
     header {
@@ -1722,6 +1679,8 @@ footer {
         margin: 16px 0px 16px 0px;
     }
 
+    /* Botão da parte "Você conhece o ChefVirtual" */
+
     .button {
         border: solid var(--Vermelho-);
         text-decoration: none;
@@ -1736,6 +1695,33 @@ footer {
     }
 
     .button:hover {
+        background-color: var(--Vermelho-);
+        transition: .5s;
+        color: white;
+    }
+
+    /* Botões da parte "Menu Gourmet" */
+    .botao-menu {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .button2 {
+        border: solid var(--Vermelho-);
+        text-decoration: none;
+        text-align: center;
+        background-color: #fff;
+        transition: .5s;
+        padding: 8px;
+        border-radius: 8px;
+        margin-top: 16px;
+        color: #000000;
+        font-family: "Nunito", sans-serif;
+        font-size: 1.1em;
+    }
+
+    .button2:hover {
         background-color: var(--Vermelho-);
         transition: .5s;
         color: white;
@@ -1818,8 +1804,6 @@ footer {
 
     /* Parte footer Botão home*/
 
-
-
     .Button {
         text-decoration: none;
         background-color: var(--CadetBlue);
@@ -1831,6 +1815,76 @@ footer {
         font-weight: bold;
     }
 
+    /* Card Menu Gourmet */
+    .Container-menu {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .Container-menu a {
+        justify-content: center;
+        display: flex;
+        text-decoration: none;
+        margin: 20px 0;
+        height: auto;
+        background-color: var(--Card);
+    }
+
+    .Card-menu {
+        display: flex;
+        flex-direction: row;
+
+        align-items: center;
+        text-align: center;
+
+        width: 100%;
+        height:auto;
+    }
+
+    .Card-menu img {
+        margin: 0px 30px 0 0px;
+        width: 250px;
+        height: auto;
+    }
+
+    .text-menu {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        color: black;
+    }
+
+    .text-menu p {
+        margin-top: 10px;
+    }
+
+    /* Carrossel Menu Gourmet */
+
+    .carroussel-container-menu {
+        width: 1000px;
+        height: 700px;
+        padding: 10px 10px;
+        background-color: var(--Card);
+        border-radius: 25px 25px 0 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        overflow-y: scroll;
+        position: relative;
+    }
+
+    .carroussel-container-menu::-webkit-scrollbar {
+        display: none;
+    }
+
+    .carousel-menu {
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.5s ease;
+    }
 
     /* Cabeçalho */
     header {
@@ -1871,6 +1925,7 @@ footer {
         transition: .5s;
     }
 
+
     /* Banner */
     #banner {
         margin-top: 20px;
@@ -1885,6 +1940,42 @@ footer {
     }
 
     #banner h2 {
+        font-size: 2.2em;
+        font-weight: 600;
+    }
+
+    /* Banner2 */
+    #banner2 {
+        margin-top: 20px;
+        height: 55vh;
+        background-position: center;
+    }
+
+    #banner2 h1 {
+        font-size: 3.2em;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    #banner2 h2 {
+        font-size: 2.2em;
+        font-weight: 600;
+    }
+
+    /* Banner3 */
+    #banner3 {
+        margin-top: 20px;
+        height: 55vh;
+        background-position: center;
+    }
+
+    #banner3 h1 {
+        font-size: 3.2em;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    #banner3 h2 {
         font-size: 2.2em;
         font-weight: 600;
     }

@@ -47,17 +47,21 @@
         </div>
     </main>
 
-    <!-- Em Construção -->
-     <section class="Container">
-        <div class="Card">
-            <img src="./img/site.jpg" alt="Em construção">
-            <h3> Em Construção </h3>
-            <p>Este site está em construção.
-             Você pode acompanhar as novidades 
-             pelo nosso instagram.</p>
-            <a href="http://www.instagram.com/" target="_blank" class="Button">Saiba + </a>
-        </div>
-    </section> 
+    <section>
+        <h2>Contato</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off">
+            <label>Mensagem</label>
+            <textarea name="message" cols="30"  rows="10" placeholder="Digite sua mensagem"></textarea>
+            <button type="submit">Enviar</button>
+            
+            <input type="hidden" name="accessKey" value="3e9a5c1b-abce-4764-b89d-620f2cb419da">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/contato.html">
+        </form>
+    </section>
 
 
     <!-- Rodapé -->
