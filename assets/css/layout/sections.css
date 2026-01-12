@@ -5,113 +5,28 @@
 
 /* LAYOUT >>>>>>>>>>>>>>>>>>>>*/
 
-/* Banner */
-#banner {
-  height: 46vh;
-  background: url(img/banner.png);
-  background-size: cover;
-  background-position: center;
-  color: #fff;
+/* Banners */
+/* BANNER DESKTOP */
+.banner {
+  height: 55vh;
+  background: url(../../img/banner.png) center/cover;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
   text-align: center;
+  color: white;
+  margin-top: 20px;
 }
 
-#banner h1 {
-  font-family: "Dosis", sans-serif;
-  font-weight: 600;
-  font-size: 2em;
-  margin-top: 52px;
+.banner h1 {
+  font-size: 3.2em;
+  margin-bottom: 10px;
 }
 
-#banner h2 {
-  font-family: "Dosis", sans-serif;
-  font-size: 1.15em;
-  font-weight: 550;
-  margin: 5px 0px 45px 0px;
+.banner h2 {
+  font-size: 2.2em;
 }
 
-/* Banner Sobre */
-#banner1 {
-  height: 38vh;
-  background: url(img/banner.png);
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-#banner1 h1 {
-  font-family: "Dosis", sans-serif;
-  font-weight: 600;
-  font-size: 2em;
-  margin-top: 45px;
-}
-
-#banner1 h2 {
-  font-family: "Dosis", sans-serif;
-  font-size: 1.15em;
-  font-weight: 550;
-  margin: 5px 0px 45px 0px;
-}
-
-/* Banner Contato */
-#banner2 {
-  height: 38vh;
-  background: url(img/banner.png);
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-#banner2 h1 {
-  font-family: "Dosis", sans-serif;
-  font-weight: 600;
-  font-size: 2em;
-  margin-top: 45px;
-}
-
-#banner2 h2 {
-  font-family: "Dosis", sans-serif;
-  font-size: 1.15em;
-  font-weight: 550;
-  margin: 5px 0px 45px 0px;
-}
-
-/* Banner Menu Gourmet */
-#banner3 {
-  height: 38vh;
-  background: url(img/banner.png);
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-#banner3 h1 {
-  font-family: "Dosis", sans-serif;
-  font-weight: 600;
-  font-size: 2em;
-  margin-top: 45px;
-}
-
-#banner3 h2 {
-  font-family: "Dosis", sans-serif;
-  font-size: 1.15em;
-  font-weight: 550;
-  margin: 5px 0px 45px 0px;
-}
 
 /* Parte footer Texto home mais vantagens*/
 

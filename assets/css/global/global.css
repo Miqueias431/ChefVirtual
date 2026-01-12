@@ -11,16 +11,17 @@ body {
   font-family: "Dosis", sans-serif;
 }
 
+/* Container principal DESKTOP */
+.Container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 section {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-}
-
-.Container {
-  margin: 0 auto;
-  padding: 50px 15px;
-  /*Top, right, botton, left*/
 }
 
 .ContainerEx {

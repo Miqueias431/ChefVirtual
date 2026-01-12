@@ -1,0 +1,503 @@
+/* PCs ou notebooks HD + >>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 1200px) {
+  .Container,
+  .ContainerEx {
+    max-width: 1140px;
+  }
+
+  /* CARROSSEL */
+  .carousel-container {
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+  }
+
+  .carousel {
+    animation: pri-slide 70s infinite;
+    transition: transform 0.5s ease;
+  }
+
+  @keyframes pri-slide {
+    0% {
+      transform: translateX(0);
+    }
+
+    15% {
+      transform: translateX(0);
+    }
+
+    30% {
+      transform: translateX(-90%);
+    }
+
+    45% {
+      transform: translateX(-90%);
+    }
+
+    60% {
+      transform: translateX(-181%);
+    }
+
+    75% {
+      transform: translateX(-181%);
+    }
+
+    80% {
+      transform: translateX(-212%);
+    }
+
+    90% {
+      transform: translateX(-212%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .Card:first-child {
+    margin-left: 80px;
+  }
+
+  .Card {
+    flex: 0 0 300px;
+    max-width: 300px;
+    height: 570px;
+    margin-right: 135px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5),
+      -5px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    /* Colocar atrás do card */
+  }
+
+  .Card img {
+    margin-top: 0px;
+    width: 100%;
+  }
+
+  .card-content {
+    text-align: left;
+    /* Centralizar o conteúdo */
+  }
+
+  .card-content h3 {
+    padding: 9px 0px 0px 10px;
+    font-weight: 600;
+  }
+
+  .card-content h2 {
+    padding: 5px 0px 0px 10px;
+    color: #a80f2d;
+    font-weight: 600;
+  }
+
+  .card-content p {
+    padding: 10px 10px 0px 10px;
+    color: var(--Cinzatxt);
+    font-weight: 500;
+  }
+
+  .relogio {
+    display: flex;
+    align-items: center;
+    margin: 35px 0px 0px 0px;
+  }
+
+  .relogio img {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .relogio p {
+    text-align: left;
+    margin: 0px 0px 8px 0px;
+  }
+
+  /* Parte footer card home*/
+
+  .container-h {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    /* Adicionei a altura total da viewport */
+  }
+
+  .conteudo_img {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .conteudo,
+  .conteudo2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px 50px 80px;
+  }
+
+  .conteudo img,
+  .conteudo2 img {
+    width: auto;
+    height: auto;
+  }
+
+  .conteudo p {
+    font-size: 1em;
+    text-align: center;
+    width: 379px;
+    margin: 16px 0px 16px 0px;
+  }
+
+  .conteudo2 p {
+    text-align: center;
+    width: 379px;
+    margin: 16px 0px 16px 0px;
+  }
+
+  /* Botão da parte "Você conhece o ChefVirtual" */
+
+  .button {
+    border: solid var(--Vermelho-);
+    text-decoration: none;
+    background-color: #fff;
+    transition: 0.5s;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 16px;
+    color: #000000;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.1em;
+  }
+
+  .button:hover {
+    background-color: var(--Vermelho-);
+    transition: 0.5s;
+    color: white;
+  }
+
+  /* Botões da parte "Menu Gourmet" */
+  .botao-menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button2 {
+    border: solid var(--Vermelho-);
+    text-decoration: none;
+    text-align: center;
+    background-color: #fff;
+    transition: 0.5s;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 16px;
+    color: #000000;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.1em;
+  }
+
+  .button2:hover {
+    background-color: var(--Vermelho-);
+    transition: 0.5s;
+    color: white;
+  }
+
+  .conteudo-topo {
+    margin: 45px 0 0 0;
+    align-items: center;
+  }
+
+  .conteudo-topo p {
+    display: flex;
+    margin: 24px 0;
+    max-width: 500px;
+  }
+
+  .conteudo-topo h4 {
+    font-family: "Nunito", sans-serif;
+    text-align: left;
+    color: #a0a0a0;
+    font-weight: 400;
+    margin: 16px 0;
+  }
+
+  .conteudo-topo h2 {
+    font-family: "Dosis", sans-serif;
+    font-size: 2em;
+    text-align: left;
+    color: #000000;
+    font-weight: 600;
+    width: 300px;
+  }
+
+  /* Uma Parte Texto do carrossel */
+
+  .Container-In {
+    background-color: #a80f2d;
+    width: 100%;
+    height: 150px;
+  }
+
+  .Texto2 {
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  .Texto2 h4 {
+    font-family: "Nunito", sans-serif;
+    margin: 20px 0px -65px 0px;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+  }
+
+  .Texto2 h2 {
+    font-family: "Dosis", sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    margin-top: -45px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  .CardVantagem {
+    display: flex;
+    margin: 30px 30px 20px 30px;
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+
+  /* Parte footer Botão home*/
+
+  .Button {
+    text-decoration: none;
+    background-color: var(--CadetBlue);
+    color: var(--Card);
+    padding: 12px 60px;
+    border-radius: 15px;
+    font-size: 1.2em;
+    font-weight: 500;
+    font-weight: bold;
+  }
+
+  /* Card Menu Gourmet */
+  .Container-menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  .Container-menu a {
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    margin: 20px 0;
+    height: auto;
+    background-color: var(--Card);
+  }
+
+  .Card-menu {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+    height: auto;
+  }
+
+  .Card-menu img {
+    margin: 0px 30px 0 0px;
+    width: 250px;
+    height: auto;
+  }
+
+  .text-menu {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: black;
+  }
+
+  .text-menu p {
+    margin-top: 10px;
+  }
+
+  /* Carrossel Menu Gourmet */
+
+  .carroussel-container-menu {
+    width: 1000px;
+    height: 700px;
+    padding: 10px 10px;
+    background-color: var(--Card);
+    border-radius: 25px 25px 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow-y: scroll;
+    position: relative;
+  }
+
+  .carroussel-container-menu::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carousel-menu {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease;
+  }
+
+  /* Cabeçalho */
+  header {
+    height: 140px;
+  }
+
+  #logo img {
+    width: 150px;
+    height: 150px;
+    margin: 3px 0;
+  }
+
+  label {
+    display: none;
+  }
+
+  nav ul {
+    width: 100%;
+    position: static;
+    height: auto;
+    background-color: white;
+    margin-top: 50px;
+  }
+
+  nav ul li {
+    border: 0;
+    float: left;
+  }
+
+  nav ul li a {
+    color: black;
+    transition: 0.5s;
+  }
+
+  nav ul li a:hover {
+    color: #a80f2d;
+    transition: 0.5s;
+  }
+
+  /* Banner */
+  #banner {
+    margin-top: 20px;
+    height: 55vh;
+    background-position: center;
+  }
+
+  #banner h1 {
+    font-size: 3.2em;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  #banner h2 {
+    font-size: 2.2em;
+    font-weight: 600;
+  }
+
+  /* Banner2 */
+  #banner2 {
+    margin-top: 20px;
+    height: 55vh;
+    background-position: center;
+  }
+
+  #banner2 h1 {
+    font-size: 3.2em;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  #banner2 h2 {
+    font-size: 2.2em;
+    font-weight: 600;
+  }
+
+  /* Banner3 */
+  #banner3 {
+    margin-top: 20px;
+    height: 55vh;
+    background-position: center;
+  }
+
+  #banner3 h1 {
+    font-size: 3.2em;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  #banner3 h2 {
+    font-size: 2.2em;
+    font-weight: 600;
+  }
+
+  /* PARTE SOBRE*/
+
+  .FlexSobre {
+    flex-direction: row;
+  }
+
+  #textoSobre h2 {
+    font-weight: 500;
+    font-size: 1.5em;
+    margin-top: 26px;
+    text-align: left;
+  }
+
+  #textoSobre p {
+    text-align: left;
+    margin-top: 15px;
+  }
+
+  #frase {
+    font-style: italic;
+  }
+
+  #autor {
+    font-size: 0.8em;
+  }
+}
+
+/* PCs, notebooks ou Tv Full HD + >>>>>>>>>>>> */
+@media (min-width: 1400px) {
+  .Container,
+  .ContainerEx {
+    max-width: 1360px;
+  }
+
+  .CardVantagem,
+  .texto3 {
+    flex: 1;
+    max-width: unset;
+  }
+}

@@ -3,216 +3,412 @@
  @author Miquéias Rodrigues
 */
 
-/* CARROSSEL */
-.carousel-container {
-  overflow: hidden;
+/* CARROSSEL MODERNO - ChefVirtual */
+.carousel-section {
   position: relative;
-  z-index: -1;
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+  margin: 40px 0;
+}
+
+.carousel-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #a80f2d, #ff7b5a, #a80f2d);
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 15px 40px rgba(168, 15, 45, 0.1);
+  background: white;
+  padding: 30px 0;
 }
 
 .carousel {
   display: flex;
-  width: 100%;
-  animation: pri-slide 90s infinite;
-  /* Ajuste a duração da animação conforme necessário */
-  transition: transform 0.5s ease;
-  /* Transição suave ao mudar a posição */
-  margin-left: 10px;
-  /* Adiciona espaço à esquerda */
-  height: 560px;
-  z-index: -1;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  gap: 40px;
+  padding: 0 40px;
 }
 
-@keyframes pri-slide {
-  0% {
-    transform: translateX(0);
-  }
+/* Botões de navegação */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #a80f2d;
+  color: white;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 28px;
+  z-index: 10;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 20px rgba(168, 15, 45, 0.3);
+}
 
-  5% {
-    transform: translateX(0);
-  }
+.carousel-btn:hover {
+  background: #8c0b24;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 8px 25px rgba(168, 15, 45, 0.4);
+}
 
-  10% {
-    transform: translateX(-90%);
-  }
+.carousel-btn:active {
+  transform: translateY(-50%) scale(0.95);
+}
 
-  15% {
-    transform: translateX(-90%);
-  }
+.prev {
+  left: 0;
+}
 
-  20% {
-    transform: translateX(-178%);
-  }
+.next {
+  right: 0;
+}
 
-  25% {
-    transform: translateX(-178%);
-  }
+.carousel-btn:disabled {
+  background: #ddd;
+  cursor: not-allowed;
+  transform: translateY(-50%);
+  box-shadow: none;
+}
 
-  30% {
-    transform: translateX(-264%);
-  }
+.carousel-btn:disabled:hover {
+  transform: translateY(-50%);
+  box-shadow: none;
+}
 
-  35% {
-    transform: translateX(-264%);
-  }
+/* Indicadores de página */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 40px;
+}
 
-  40% {
-    transform: translateX(-354%);
-  }
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
 
-  45% {
-    transform: translateX(-354%);
-  }
+.dot:hover {
+  background: #a80f2d;
+  transform: scale(1.2);
+}
 
-  50% {
-    transform: translateX(-439%);
-  }
+.dot.active {
+  background: #a80f2d;
+  transform: scale(1.3);
+  box-shadow: 0 0 0 3px rgba(168, 15, 45, 0.2);
+}
 
-  55% {
-    transform: translateX(-439%);
-  }
+/* Cards elegantes */
+.Card {
+  flex: 0 0 calc(33.333% - 27px); /* 3 cards com gap de 40px */
+  min-width: calc(33.333% - 27px);
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(168, 15, 45, 0.1);
+  height: 580px;
+  display: flex;
+  flex-direction: column;
+}
 
-  60% {
-    transform: translateX(-529%);
-  }
+.Card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(168, 15, 45, 0.15);
+  border-color: rgba(168, 15, 45, 0.3);
+}
 
-  65% {
-    transform: translateX(-529%);
-  }
+.Card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
 
-  70% {
-    transform: translateX(-615%);
-  }
+.Card:hover img {
+  transform: scale(1.05);
+}
 
-  75% {
-    transform: translateX(-615%);
-  }
+.card-content {
+  padding: 25px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
 
-  80% {
-    transform: translateX(-703%);
-  }
+.card-content h3 {
+  color: #a80f2d;
+  font-size: 1.1em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-family: "Nunito", sans-serif;
+}
 
-  85% {
-    transform: translateX(-703%);
-  }
+.card-content h2 {
+  color: #333;
+  font-size: 1.6em;
+  font-weight: 700;
+  margin: 12px 0;
+  line-height: 1.3;
+  font-family: "Dosis", sans-serif;
+  border-left: 4px solid #a80f2d;
+  padding-left: 12px;
+}
 
-  90% {
-    transform: translateX(-790%);
-  }
+.card-content > p:first-of-type {
+  color: #666;
+  font-size: 0.95em;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: "Nunito", sans-serif;
+}
 
-  95% {
-    transform: translateX(-790%);
-  }
+.card-content > p:last-of-type {
+  color: #555;
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 15px 0;
+  flex-grow: 1;
+  font-family: "Nunito", sans-serif;
+}
 
-  100% {
-    transform: translateX(0);
-  }
+/* Relógio com estilo melhorado */
+.relogio {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px dashed #eee;
+}
+
+.relogio img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  filter: invert(24%) sepia(83%) saturate(1824%) hue-rotate(330deg)
+    brightness(95%) contrast(89%);
+}
+
+.relogio p {
+  color: #a80f2d;
+  font-weight: 600;
+  font-size: 1.1em;
+  margin: 0;
+  font-family: "Dosis", sans-serif;
+}
+
+/* Badge para tipo de receita (opcional) */
+.card-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #a80f2d;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: "Nunito", sans-serif;
+  z-index: 2;
+  box-shadow: 0 4px 10px rgba(168, 15, 45, 0.3);
 }
 
 /* Uma Parte Texto do carrossel */
-
 .Container-In {
-  background-color: #a80f2d;
+  background: linear-gradient(135deg, #a80f2d 0%, #8c0b24 100%);
   max-width: 100%;
-  height: 150px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.Container-In::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.1)"/></svg>');
+  background-size: cover;
 }
 
 .Texto2 {
   text-align: center;
-  margin-top: 85px;
+  position: relative;
+  z-index: 1;
 }
 
 .Texto2 h4 {
   font-family: "Nunito", sans-serif;
-  margin: 20px 0px -65px 0px;
-  text-align: center;
-  color: #fff;
+  font-size: 1.4em;
+  color: rgba(255, 255, 255, 0.9);
   font-weight: 400;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
 }
 
 .Texto2 h2 {
   font-family: "Dosis", sans-serif;
-  font-size: 1.5em;
-  text-align: center;
+  font-size: 2.8em;
   color: #fff;
-  font-weight: 600;
-  margin-top: -45px;
+  font-weight: 700;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
 }
 
-.Card:first-child {
-  margin-left: 10px;
-  /* Adiciona espaço à esquerda para o primeiro item */
+/* Responsividade */
+@media (max-width: 1200px) {
+  .carousel-container {
+    padding: 0 70px;
+  }
+
+  .Card {
+    flex: 0 0 calc(50% - 20px); /* 2 cards em telas médias */
+    min-width: calc(50% - 20px);
+  }
+
+  .carousel {
+    gap: 30px;
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-section {
+    padding: 50px 0;
+  }
+
+  .carousel-container {
+    padding: 0 50px;
+  }
+
+  .carousel-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+
+  .Card {
+    flex: 0 0 calc(100% - 40px); /* 1 card em telas pequenas */
+    min-width: calc(100% - 40px);
+    height: auto;
+    min-height: 550px;
+  }
+
+  .Texto2 h2 {
+    font-size: 2.2em;
+  }
+
+  .Texto2 h4 {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    padding: 0 40px;
+  }
+
+  .carousel {
+    padding: 0 20px;
+    gap: 20px;
+  }
+
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .card-content h2 {
+    font-size: 1.4em;
+  }
+}
+
+/* Animação sutil para os cards */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .Card {
-  flex: 0 0 300px;
-  max-width: 270px;
-  height: 550px;
-  margin-right: 32px;
-  background-color: #f0f0f0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5), -5px 0px 10px rgba(0, 0, 0, 0.5);
-  z-index: -1;
-  /* Colocar atrás do card */
+  animation: fadeInUp 0.6s ease forwards;
 }
 
-.Card img {
-  margin-top: 0px;
-  width: 100%;
+/* Efeito de brilho no hover dos botões */
+.carousel-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.3) 0%,
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.card-content {
-  text-align: left;
-  /* Centralizar o conteúdo */
+.carousel-btn:hover::after {
+  opacity: 1;
 }
 
-.card-content h3 {
-  padding: 9px 0px 0px 10px;
-  font-weight: 600;
-}
-
-.card-content h2 {
-  padding: 5px 0px 0px 10px;
-  color: #a80f2d;
-  font-weight: 600;
-}
-
-.card-content p {
-  padding: 10px 10px 0px 10px;
-  color: var(--Cinzatxt);
-  font-weight: 500;
-}
-
-.relogio {
-  display: flex;
-  align-items: center;
-  margin: 20px 0px 0px 0px;
-}
-
-.relogio img {
-  width: 40px;
-  height: 40px;
-  margin-right: 5px;
-  margin-left: 5px;
-}
-
-.relogio p {
-  text-align: left;
-  margin: 0px 0px 8px 0px;
-}
-
-/* Parte footer card home*/
-
+/* Parte footer card home (mantida do original) */
 .container-h {
   display: flex;
   flex-direction: column;
   height: auto;
-  /* Adicionei a altura total da viewport */
 }
 
 .conteudo_img {
@@ -259,7 +455,6 @@
 
 .conteudo-topo h2 {
   font-family: "Dosis", sans-serif;
-
   text-align: left;
   color: #000000;
   font-weight: 600;
