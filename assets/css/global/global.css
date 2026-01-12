@@ -1,0 +1,61 @@
+/**
+ Folha de estilo do site ChefVirtual.com
+ @author Miquéias Rodrigues
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+}
+
+section {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.Container {
+  margin: 0 auto;
+  padding: 50px 15px;
+  /*Top, right, botton, left*/
+}
+
+.ContainerEx {
+  margin: 0 auto;
+}
+
+.Flex,
+.FlexSobre,
+.FlexMenu {
+  display: Flex;
+}
+
+.Flex {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.FlexSobre {
+  flex-direction: column;
+  text-align: center;
+}
+
+.FlexMenu {
+  justify-content: space-between;
+}
+
+#topo {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+/* Copyright Rodapé */
+#copyright {
+  color: var(--pretonrgb);
+  font-weight: bold;
+}

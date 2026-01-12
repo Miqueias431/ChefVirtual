@@ -1,0 +1,68 @@
+/**
+ Folha de estilo do site ChefVirtual.com
+ @author Miquéias Rodrigues
+*/
+
+/************* Smartphone portrait ************/
+
+/***************** Cabeçalho ******************/
+header {
+  height: 105px;
+}
+
+#h3 {
+  display: none;
+}
+
+#logo img {
+  width: 101px;
+  height: 101px;
+  margin: 3px 0;
+}
+
+#check {
+  display: none;
+}
+
+label {
+  font-size: 2em;
+  color: var(--pretoLayout);
+  position: fixed;
+  top: 20px;
+  right: 10px;
+}
+
+nav ul {
+  background: none;
+  list-style: none;
+  background-color: var(--Vermelho-rgb);
+  height: 100vh;
+  position: fixed;
+  top: 104px;
+  right: -70%;
+  /*Estratégia para 
+    recolher o menu*/
+  width: 70%;
+  transition: all 0.7s;
+  z-index: 1;
+}
+
+/* Ativar o checkbox referente a ul*/
+
+#check:checked ~ ul {
+  right: 0px;
+  z-index: 1;
+}
+
+nav ul li {
+  border-bottom: 0.5px solid var(--pretoLayout);
+  text-align: right;
+  padding: 15px;
+  z-index: 1;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--textcolor);
+  z-index: 1;
+}

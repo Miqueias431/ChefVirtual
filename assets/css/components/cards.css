@@ -1,0 +1,268 @@
+/**
+ Folha de estilo do site ChefVirtual.com
+ @author Miquéias Rodrigues
+*/
+
+/* CARROSSEL */
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+}
+
+.carousel {
+  display: flex;
+  width: 100%;
+  animation: pri-slide 90s infinite;
+  /* Ajuste a duração da animação conforme necessário */
+  transition: transform 0.5s ease;
+  /* Transição suave ao mudar a posição */
+  margin-left: 10px;
+  /* Adiciona espaço à esquerda */
+  height: 560px;
+  z-index: -1;
+}
+
+@keyframes pri-slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  5% {
+    transform: translateX(0);
+  }
+
+  10% {
+    transform: translateX(-90%);
+  }
+
+  15% {
+    transform: translateX(-90%);
+  }
+
+  20% {
+    transform: translateX(-178%);
+  }
+
+  25% {
+    transform: translateX(-178%);
+  }
+
+  30% {
+    transform: translateX(-264%);
+  }
+
+  35% {
+    transform: translateX(-264%);
+  }
+
+  40% {
+    transform: translateX(-354%);
+  }
+
+  45% {
+    transform: translateX(-354%);
+  }
+
+  50% {
+    transform: translateX(-439%);
+  }
+
+  55% {
+    transform: translateX(-439%);
+  }
+
+  60% {
+    transform: translateX(-529%);
+  }
+
+  65% {
+    transform: translateX(-529%);
+  }
+
+  70% {
+    transform: translateX(-615%);
+  }
+
+  75% {
+    transform: translateX(-615%);
+  }
+
+  80% {
+    transform: translateX(-703%);
+  }
+
+  85% {
+    transform: translateX(-703%);
+  }
+
+  90% {
+    transform: translateX(-790%);
+  }
+
+  95% {
+    transform: translateX(-790%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Uma Parte Texto do carrossel */
+
+.Container-In {
+  background-color: #a80f2d;
+  max-width: 100%;
+  height: 150px;
+}
+
+.Texto2 {
+  text-align: center;
+  margin-top: 85px;
+}
+
+.Texto2 h4 {
+  font-family: "Nunito", sans-serif;
+  margin: 20px 0px -65px 0px;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+}
+
+.Texto2 h2 {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  margin-top: -45px;
+}
+
+.Card:first-child {
+  margin-left: 10px;
+  /* Adiciona espaço à esquerda para o primeiro item */
+}
+
+.Card {
+  flex: 0 0 300px;
+  max-width: 270px;
+  height: 550px;
+  margin-right: 32px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5), -5px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  /* Colocar atrás do card */
+}
+
+.Card img {
+  margin-top: 0px;
+  width: 100%;
+}
+
+.card-content {
+  text-align: left;
+  /* Centralizar o conteúdo */
+}
+
+.card-content h3 {
+  padding: 9px 0px 0px 10px;
+  font-weight: 600;
+}
+
+.card-content h2 {
+  padding: 5px 0px 0px 10px;
+  color: #a80f2d;
+  font-weight: 600;
+}
+
+.card-content p {
+  padding: 10px 10px 0px 10px;
+  color: var(--Cinzatxt);
+  font-weight: 500;
+}
+
+.relogio {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px 0px 0px;
+}
+
+.relogio img {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.relogio p {
+  text-align: left;
+  margin: 0px 0px 8px 0px;
+}
+
+/* Parte footer card home*/
+
+.container-h {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  /* Adicionei a altura total da viewport */
+}
+
+.conteudo_img {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-left: 0px;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.conteudo p {
+  text-align: left;
+  width: 340px;
+  margin: 16px 0px 16px 10px;
+}
+
+.conteudo2 {
+  display: none;
+}
+
+.conteudo-topo {
+  margin-left: 10px;
+  align-items: center;
+}
+
+.conteudo-topo p {
+  display: none;
+}
+
+.conteudo-topo h4 {
+  font-family: "Nunito", sans-serif;
+  text-align: left;
+  color: #a0a0a0;
+  font-weight: 400;
+  margin: 32px 0;
+}
+
+.conteudo-topo h2 {
+  font-family: "Dosis", sans-serif;
+
+  text-align: left;
+  color: #000000;
+  font-weight: 600;
+  width: 200px;
+  margin-bottom: 20px;
+}
