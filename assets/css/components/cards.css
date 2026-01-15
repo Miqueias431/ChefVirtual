@@ -4,6 +4,10 @@
 */
 
 /* CARROSSEL MODERNO - ChefVirtual */
+.carousel-section .container {
+  display: none !important;
+}
+
 .carousel-section {
   position: relative;
   padding: 80px 0;
@@ -249,8 +253,8 @@
 }
 
 /* Uma Parte Texto do carrossel */
-.Container-In {
-  background: linear-gradient(135deg, #a80f2d 0%, #8c0b24 100%);
+/* .Container-In {
+  background: linear-gradient(135deg, #a80f2d 0%, #8c0b24 100%) !important;
   max-width: 100%;
   height: 180px;
   display: flex;
@@ -258,7 +262,7 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
-}
+} */
 
 .Container-In::before {
   content: "";
@@ -404,60 +408,81 @@
   opacity: 1;
 }
 
-/* Parte footer card home (mantida do original) */
+/* Parte footer card home */
+#container-home {
+  display: flex;
+  align-items: center;
+  margin: 60px auto;
+  max-width: auto;
+  padding: 0 20px;
+}
+
 .container-h {
   display: flex;
-  flex-direction: column;
-  height: auto;
-}
-
-.conteudo_img {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-  margin-left: 0px;
-}
-
-.conteudo {
-  display: flex;
-  justify-content: right;
-  flex-direction: column;
-  flex-grow: 1;
-  align-items: center;
-}
-
-.conteudo p {
-  text-align: left;
-  width: 340px;
-  margin: 16px 0px 16px 10px;
-}
-
-.conteudo2 {
-  display: none;
+  justify-content: space-between !important;
+  gap: 20px;
+  margin: auto 0px;
 }
 
 .conteudo-topo {
   margin-left: 10px;
   align-items: center;
+
+  & h4 {
+    font-family: "Nunito", sans-serif;
+    text-align: left;
+    color: #a0a0a0;
+    font-weight: 400;
+    margin: 32px 0;
+  }
+
+  & h2 {
+    font-family: "Nunito", sans-serif;
+    text-align: left;
+    color: #000000;
+    font-weight: 600;
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  & p {
+    width: 340px;
+    font-family: "Dosis", sans-serif;
+    text-align: left;
+    color: #333333;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
 }
 
-.conteudo-topo p {
-  display: none;
+.conteudo-m {
+  display: flex;
+  margin: 30px auto;
+  justify-content: right;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+
+  & p {
+    margin-top: 10px;
+    font-family: "Dosis", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    width: 340px;
+  }
 }
 
-.conteudo-topo h4 {
-  font-family: "Nunito", sans-serif;
-  text-align: left;
-  color: #a0a0a0;
-  font-weight: 400;
-  margin: 32px 0;
-}
+.conteudo-f {
+  display: flex;
+  margin: 30px auto;
+  justify-content: right;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
 
-.conteudo-topo h2 {
-  font-family: "Dosis", sans-serif;
-  text-align: left;
-  color: #000000;
-  font-weight: 600;
-  width: 200px;
-  margin-bottom: 20px;
+  & p {
+    margin-bottom: 10px;
+    text-align: left;
+    width: 340px;
+  }
 }

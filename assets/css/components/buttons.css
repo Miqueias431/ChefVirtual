@@ -17,17 +17,7 @@
   margin-right: 5px;
 }
 
-.button {
-  text-decoration: none;
-  background-color: var(--Vermelho-);
-  transition: 0.5s;
-  padding: 8px;
-  border-radius: 8px;
-  margin-top: 16px;
-  color: #fff;
-  font-family: "Nunito", sans-serif;
-  font-size: 1.2em;
-}
+
 
 /* Parte footer Botão home*/
 
@@ -40,4 +30,26 @@
   font-size: 1.2em;
   font-weight: 500;
   font-weight: bold;
+}
+
+
+/* Botão Home "Venha nos conhecer" */
+
+.button {
+  text-decoration: none;
+  background-color: var(--Vermelho-);
+  transition: 0.5s;
+  padding: 8px;
+  border-radius: 8px;
+  margin-top: 16px;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2em;
+
+  &:hover {
+    background-color: var(--VermelhoEscuro);
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
 }

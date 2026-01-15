@@ -7,7 +7,7 @@
 
 /* Banners */
 /* BANNER DESKTOP */
-.banner {
+#banner {
   height: 55vh;
   background: url(../../img/banner.png) center/cover;
   display: flex;
@@ -16,30 +16,22 @@
   text-align: center;
   color: white;
   margin-top: 20px;
+
+  & h1 {
+    font-size: 3.2em;
+    margin-bottom: 10px;
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+  }
+  & h2 {
+    font-size: 1.8em;
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+  }
 }
 
-.banner h1 {
-  font-size: 3.2em;
-  margin-bottom: 10px;
-}
-
-.banner h2 {
-  font-size: 2.2em;
-}
-
-
-/* Parte footer Texto home mais vantagens*/
-
-#Texto1 h2 {
-  margin-top: 30px;
-  font-family: "Dosis", sans-serif;
-  font-size: 2em;
-  color: var(--Branco);
-  text-align: center;
-  font-weight: 600;
-}
-
-.container {
+/* Seção "Mais Vantagens" */
+#vantagens-container {
   display: flex;
   background-color: #a80f2d;
   margin-top: -20px;
@@ -48,6 +40,15 @@
   padding-left: 30px;
   flex-direction: column;
   text-align: center;
+}
+
+#Texto1 h2 {
+  margin-top: 30px;
+  font-family: "Dosis", sans-serif;
+  font-size: 2em;
+  color: var(--Branco);
+  text-align: center;
+  font-weight: 600;
 }
 
 .CardVantagem {

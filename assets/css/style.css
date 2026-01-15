@@ -1,21 +1,11 @@
-/* style.css - Arquivo principal de importação */
-
-/* 1. Configurações Globais */
+/* style.css - Arquivo principal */
 @import url("./global/reset.css");
 @import url("./global/variables.css");
 @import url("./global/global.css");
-
-/* 2. Layout Base */
 @import url("./layout/header.css");
 @import url("./layout/footer.css");
 @import url("./layout/sections.css");
-
-/* 3. Componentes */
 @import url("./components/buttons.css");
 @import url("./components/cards.css");
 @import url("./components/forms.css");
 @import url("./components/navbar.css");
-
-/* 4. Estilos Específicos de Páginas (se houver) */
-/* @import url('./pages/home.css'); */
-
